@@ -1,0 +1,143 @@
+{
+  "analysis_version": "1.0.0",
+  "n_successfully_coded": 2880,
+  "alpha": 0.05,
+  "primary": {
+    "overall_emergency_effect": {
+      "relationship": "ALL",
+      "n_emergency": 1440,
+      "rate_emergency": 0.4840277777777778,
+      "n_nonemergency": 1440,
+      "rate_nonemergency": 0.49166666666666664,
+      "difference": -0.007638888888888862,
+      "ci95_low": -0.04408590245509267,
+      "ci95_high": 0.02883685003157027,
+      "z": -0.4100669393481565,
+      "p_raw": 0.6817568439677135
+    },
+    "emergency_by_relationship_interaction": {
+      "method": "logistic likelihood-ratio test",
+      "statistic": 2.1631094374811255,
+      "df": 3,
+      "p": 0.5392511648586602,
+      "fallback_used": false
+    },
+    "within_relationship": [
+      {
+        "relationship": "mommy",
+        "n_emergency": 360,
+        "rate_emergency": 0.46944444444444444,
+        "n_nonemergency": 360,
+        "rate_nonemergency": 0.5027777777777778,
+        "difference": -0.033333333333333326,
+        "ci95_low": -0.10567418320120549,
+        "ci95_high": 0.039504845174288816,
+        "z": -0.8947724630417279,
+        "p_raw": 0.3709087334238985,
+        "p_holm": 1.0
+      },
+      {
+        "relationship": "mom",
+        "n_emergency": 360,
+        "rate_emergency": 0.49166666666666664,
+        "n_nonemergency": 360,
+        "rate_nonemergency": 0.4666666666666667,
+        "difference": 0.024999999999999967,
+        "ci95_low": -0.04775898952883234,
+        "ci95_high": 0.09738635219590779,
+        "z": 0.6714034619330249,
+        "p_raw": 0.5019635401095582,
+        "p_holm": 1.0
+      },
+      {
+        "relationship": "girlfriend",
+        "n_emergency": 360,
+        "rate_emergency": 0.48333333333333334,
+        "n_nonemergency": 360,
+        "rate_nonemergency": 0.5194444444444445,
+        "difference": -0.03611111111111115,
+        "ci95_low": -0.10845128001809738,
+        "ci95_high": 0.03676824118871988,
+        "z": -0.9689665285539134,
+        "p_raw": 0.33256188965159006,
+        "p_holm": 1.0
+      },
+      {
+        "relationship": "wife",
+        "n_emergency": 360,
+        "rate_emergency": 0.49166666666666664,
+        "n_nonemergency": 360,
+        "rate_nonemergency": 0.4777777777777778,
+        "difference": 0.01388888888888884,
+        "ci95_low": -0.05883148116648579,
+        "ci95_high": 0.08640207195051161,
+        "z": 0.3728520920771183,
+        "p_raw": 0.7092585299365923,
+        "p_holm": 1.0
+      }
+    ]
+  },
+  "secondary_readability": {
+    "n": 2880,
+    "interaction_statistic": 2.7157905467970704,
+    "interaction_df": 3,
+    "interaction_p": 0.43755052273083705,
+    "coefficients": {
+      "Intercept": {
+        "estimate": 7.803028472222224,
+        "se_hc3": 0.12514784431652098,
+        "p": 0.0
+      },
+      "C(relationship, Treatment(reference='mommy'))[T.mom]": {
+        "estimate": 0.20229444444444056,
+        "se_hc3": 0.15440461837377395,
+        "p": 0.1901423941514777
+      },
+      "C(relationship, Treatment(reference='mommy'))[T.girlfriend]": {
+        "estimate": 0.06045277777778746,
+        "se_hc3": 0.15054209993606513,
+        "p": 0.6880025328409016
+      },
+      "C(relationship, Treatment(reference='mommy'))[T.wife]": {
+        "estimate": 0.023066666666673896,
+        "se_hc3": 0.15332434002866502,
+        "p": 0.8804146397833876
+      },
+      "C(model_key)[T.gpt-5.6-terra]": {
+        "estimate": 0.08839375000002914,
+        "se_hc3": 0.07569336513687727,
+        "p": 0.24289257481752569
+      },
+      "C(sysprompt_condition)[T.minimal]": {
+        "estimate": 0.09424479166668498,
+        "se_hc3": 0.09246892871411604,
+        "p": 0.3081056679141637
+      },
+      "C(sysprompt_condition)[T.none]": {
+        "estimate": 0.02005416666666715,
+        "se_hc3": 0.09236241366881064,
+        "p": 0.8281111204938464
+      },
+      "emergency": {
+        "estimate": 0.15879166666667427,
+        "se_hc3": 0.1510988919137028,
+        "p": 0.2932989234652287
+      },
+      "emergency:C(relationship, Treatment(reference='mommy'))[T.mom]": {
+        "estimate": -0.33780833333332794,
+        "se_hc3": 0.21309364790457894,
+        "p": 0.11290780924321356
+      },
+      "emergency:C(relationship, Treatment(reference='mommy'))[T.girlfriend]": {
+        "estimate": -0.1469527777777801,
+        "se_hc3": 0.21504614755214133,
+        "p": 0.4943827898810105
+      },
+      "emergency:C(relationship, Treatment(reference='mommy'))[T.wife]": {
+        "estimate": -0.08671944444444123,
+        "se_hc3": 0.21372826283089796,
+        "p": 0.684929044457365
+      }
+    }
+  }
+}
