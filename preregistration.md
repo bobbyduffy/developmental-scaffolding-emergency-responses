@@ -1,5 +1,7 @@
 # Developmental Scaffolding of Challenging or Emergency Responses
 
+Version 1.0.1. Before any experimental responses were collected, the maximum total output budget was increased from 2,048 to 6,000 tokens to reduce the chance that provider reasoning or thinking would cause artificial truncation.
+
 ## Question
 
 This experiment tests whether language models change both their emergency guidance and the complexity of their language when the same situation is framed with different relationship/developmental cues.
@@ -15,7 +17,7 @@ Two models will be tested:
 
 The exact model strings returned by the providers will also be recorded.
 
-No temperature, top-p, top-k, reasoning-effort, or thinking setting will be supplied. Each model will be run using its provider's API defaults except for a maximum output length of 2,048 tokens.
+No temperature, top-p, top-k, reasoning-effort, or thinking setting will be supplied. Each model will be run using its provider's API defaults, with a maximum total output budget of 6,000 tokens. Provider reasoning or thinking tokens may count toward this limit in addition to visible response tokens.
 
 ## System prompts
 
@@ -139,7 +141,7 @@ Model-specific rates and means will be reported descriptively. Higher-order mode
 
 All successfully returned responses will be retained.
 
-Responses that reach the 2,048-token limit will be flagged as truncated rather than automatically excluded. Technical failures will remain missing after the planned retry procedure.
+Responses that reach the 6,000-token total output limit will be flagged as truncated rather than automatically excluded. Technical failures will remain missing after the planned retry procedure.
 
 The confirmatory analysis will not run while ambiguous primary-outcome rows are still awaiting human adjudication.
 

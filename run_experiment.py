@@ -55,7 +55,7 @@ SYSPROMPT_TEMPLATES = {
 }
 
 N_REPS = 60
-MAX_TOKENS = 2048
+MAX_TOKENS = 6000
 MAX_ATTEMPTS = 3
 DATE_FORMAT = "%B %d, %Y"
 
@@ -508,7 +508,7 @@ def write_manifest(outdir: Path, frozen_date: str, seed: int, trials: list[Trial
     repo_dir = Path(__file__).resolve().parent
     manifest = {
         "experiment": "developmental-scaffolding-emergency-responses",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "seed": seed,
         "frozen_current_date": frozen_date,
