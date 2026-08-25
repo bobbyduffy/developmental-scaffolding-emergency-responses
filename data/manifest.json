@@ -1,7 +1,7 @@
 {
   "experiment": "developmental-scaffolding-emergency-responses",
-  "version": "1.0.0",
-  "created_utc": "2026-08-25T21:23:34.256470+00:00",
+  "version": "1.0.1",
+  "created_utc": "2026-08-25T21:38:12.511533+00:00",
   "seed": 20260825,
   "frozen_current_date": "August 25, 2026",
   "date_format": "%B %d, %Y",
@@ -108,7 +108,7 @@
     }
   },
   "generation_settings": {
-    "max_tokens": 2048,
+    "max_tokens": 6000,
     "max_attempts": 3,
     "temperature": "provider default (not set)",
     "top_p": "provider default (not set)",
@@ -127,8 +127,8 @@
     "statsmodels": "0.14.6"
   },
   "file_hashes": {
-    "preregistration.md": "c824b8054c2a6fbb07776d18e8c74ec0e475e3da719e33e405fe136908af4be0",
-    "run_experiment.py": "0f0eed92a99641e52691175a3b45a16f3abd9b62480c73192c6e3549b668917e",
+    "preregistration.md": "3795a7b031fffc44c49171961838bb5c279ea0a0f38eaeabf440d0eac9c0cb9e",
+    "run_experiment.py": "f76dcc74d44716a11ab92439d7e4bb50588cc4fb533429113acc3a851fc9a97a",
     "code_responses.py": "f6f00966758f48324a018d29013e370c4fe0e42a3c05d7d9b92894f24cd2d2fa",
     "analyze_results.py": "e109d69eb3b869f8f63bea3c9d640858964f002121194fc0a3fcf43de229dda2",
     "generate_synthetic.py": "f1c9aac7f0785ac5d55e7e6aa0968bfd4c307c1ca6aac001deb3b51b2c341ede",
