@@ -76,10 +76,16 @@ FROZEN_FILES = [
     "run_experiment.py",
     "code_responses.py",
     "CODING_RULES.md",
+    "CODER_CALIBRATION.md",
+    "calibrate_coder_against_study1.py",
     "DESIGN_NOTES.md",
     "analyze_results.py",
     "generate_synthetic.py",
+    "daddy_polysemy_check.py",
     "requirements.txt",
+    "tests/test_analysis.py",
+    "tests/test_coding.py",
+    "tests/test_runner.py",
 ]
 
 

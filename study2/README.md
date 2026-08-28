@@ -1,6 +1,6 @@
 # Study 2 — contemporaneous eight-referent extension
 
-**STATUS: BUILDING / NOT YET FROZEN / DO NOT START REAL COLLECTION YET**
+**STATUS: FROZEN PRE-COLLECTION / API PROBE NEXT**
 
 This directory contains the Study 2 extension of the completed Study 1 experiment.
 

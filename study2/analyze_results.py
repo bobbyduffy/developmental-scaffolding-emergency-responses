@@ -91,29 +91,46 @@ def interaction_omnibus(model, left: str, right: str) -> dict:
     return {"stat": float(wt.statistic), "df": len(idx), "p": float(wt.pvalue)}
 
 
-def design_row(model, relationship: str, model_key: str, sysprompt: str) -> np.ndarray:
-    import patsy
-    frame = pd.DataFrame({"relationship": pd.Categorical([relationship], categories=REL_ORDER, ordered=True), "model_key": [model_key], "sysprompt_condition": [sysprompt]})
-    X = patsy.build_design_matrices([model.model.data.design_info], frame, return_type="dataframe")[0]
-    return np.asarray(X.iloc[0], dtype=float)
-
-
 def average_pair_contrast(model, data: pd.DataFrame, male_term: str, female_term: str) -> dict:
-    combos = data[["model_key", "sysprompt_condition"]].drop_duplicates().sort_values(["model_key", "sysprompt_condition"])
-    vecs = []
-    for _, r in combos.iterrows():
-        xm = design_row(model, male_term, r["model_key"], r["sysprompt_condition"])
-        xf = design_row(model, female_term, r["model_key"], r["sysprompt_condition"])
-        vecs.append(xm - xf)
-    c = np.mean(vecs, axis=0)
+    """Male-coded minus female-coded contrast within a matched relationship pair.
+
+    The primary model is additive in relationship, model endpoint, and system
+    prompt, so the matched relationship contrast is obtained directly from the
+    fitted relationship coefficients. This avoids version-dependent reliance
+    on statsmodels/Patsy design-info internals.
+    """
+    names = list(model.params.index)
+    c = np.zeros(len(names), dtype=float)
+
+    def add_relationship_term(term: str, weight: float) -> None:
+        # REL_ORDER[0] ("mommy") is the treatment-coded reference level.
+        if term == REL_ORDER[0]:
+            return
+        param = f"C(relationship)[T.{term}]"
+        if param not in names:
+            raise RuntimeError(f"Expected relationship coefficient not found: {param}")
+        c[names.index(param)] += weight
+
+    add_relationship_term(male_term, 1.0)
+    add_relationship_term(female_term, -1.0)
+
     est = float(c @ np.asarray(model.params))
     cov = np.asarray(model.cov_params())
     se = float(np.sqrt(c @ cov @ c))
     z = est / se if se > 0 else np.nan
+
     from scipy.stats import norm
+
     p = float(2 * norm.sf(abs(z))) if np.isfinite(z) else np.nan
     lo, hi = est - 1.96 * se, est + 1.96 * se
-    return {"male_term": male_term, "female_term": female_term, "estimate": est, "se": se, "ci95": [lo, hi], "p": p}
+    return {
+        "male_term": male_term,
+        "female_term": female_term,
+        "estimate": est,
+        "se": se,
+        "ci95": [lo, hi],
+        "p": p,
+    }
 
 
 def summarize_by_relationship(df: pd.DataFrame, outcome: str) -> list[dict]:
