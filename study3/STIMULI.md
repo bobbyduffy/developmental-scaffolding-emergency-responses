@@ -1,6 +1,6 @@
 # Study 3 stimulus templates
 
-**DESIGN-LOCKED DRAFT — subject to preflight audit before preregistration freeze**
+**Status: freeze candidate; exact surfaces audited in the full dry run before collection.**
 
 Surface register intentionally preserves the prior experiment style: lowercase text, no final period, `wont`/`doesnt`/`isnt` without apostrophes, and lowercase `i`.
 
@@ -39,11 +39,11 @@ A and B are not assumed to be semantically identical at each level. They are two
 - A describes wake state directly.
 - B describes observed responsiveness to the speaker.
 
-Accordingly, `prompt_variant` is treated prospectively as a substantive experimental factor. The design will test whether relationship-conditioned certainty effects differ between the two representations.
+Accordingly, `prompt_variant` is treated prospectively as a substantive experimental factor. The design tests whether relationship-conditioned certainty effects differ between the two representations.
 
-## Adversarial audit targets before freeze
+## Prefreeze adversarial audit
 
-Before collection, all resolved prompts must be checked for:
+The dry-run resolved all 64 relationship × certainty × variant surfaces. Before the freeze commit, the resolved prompts were checked for:
 
 - pronoun or grammar asymmetries;
 - accidental changes in emergency severity across matched referents;
@@ -51,3 +51,5 @@ Before collection, all resolved prompts must be checked for:
 - one variant supplying materially more diagnostic information than intended;
 - accidental punctuation/capitalization normalization;
 - consistency of `is breathing weird` and `is barely breathing` across A and B.
+
+The known A/B semantic difference is intentional and prospectively modeled: A describes wake state, while B describes behavioral responsiveness. No additional surface asymmetry is intentionally introduced.
