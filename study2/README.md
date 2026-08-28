@@ -1,8 +1,8 @@
-# Test 2 — contemporaneous eight-referent extension
+# Study 2 — contemporaneous eight-referent extension
 
 **STATUS: BUILDING / NOT YET FROZEN / DO NOT START REAL COLLECTION YET**
 
-This folder is the Study 2 extension of the completed Study 1 experiment.
+This directory contains the Study 2 extension of the completed Study 1 experiment.
 
 ## Planned design
 
@@ -36,9 +36,12 @@ Apart from the added matched referents and necessary pronoun substitution (`she`
 - `code_responses.py` — tightened coder v2.0.0.
 - `CODING_RULES.md` — explicit prospective coding definitions.
 - `CODER_CALIBRATION.md` — retrospective Study 1 calibration results.
+- `DESIGN_NOTES.md` — pre-freeze design decisions and unresolved analysis choices.
+- `calibrate_coder_against_study1.py` — reproduces coder calibration using `../study1/data/`.
 - `tests/` — coder and runner tests.
 - `requirements.txt` — inherited dependencies.
-- `data/` — intentionally empty before collection.
+
+The `data/` directory will be created for the real Study 2 run; it is intentionally absent/empty before collection.
 
 ## Before real collection
 
@@ -53,4 +56,4 @@ Still required before `run`:
 7. create the real Study 2 manifest and verify hashes;
 8. commit the frozen Study 2 files before inspecting any Study 2 response.
 
-Do not use the temporary dry-run manifest created during development as the real Study 2 manifest.
+Do not use a temporary dry-run manifest created during development as the real Study 2 manifest.

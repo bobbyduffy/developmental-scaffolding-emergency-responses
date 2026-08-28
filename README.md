@@ -1,72 +1,50 @@
 # Developmental Scaffolding of Challenging or Emergency Responses
 
-Code and preregistration for a two-model experiment on emergency guidance and linguistic complexity.
+Research repository for experiments on how relationship/developmental cues shape language-model emergency guidance, urgency, readability, and response framing.
 
-The experiment crosses:
+## Studies
 
-- 2 models
-- 3 system prompt conditions
-- 4 relationship/developmental cues
-- 2 emergency-cue conditions
-- 60 repetitions per cell
+### Study 1 — completed
 
-Total planned responses: 2,880.
+`study1/` contains the original four-referent experiment:
 
-The scientific specification is in [preregistration.md](preregistration.md).
+- mommy
+- mom
+- girlfriend
+- wife
 
-## Files
+Design: 2 models × 3 system-prompt conditions × 4 referents × 2 emergency-cue conditions × 60 repetitions = **2,880 responses**.
 
-- `preregistration.md` — frozen study plan
-- `run_experiment.py` — collection runner
-- `code_responses.py` — conservative primary coding, blinded adjudication export, and readability scoring
-- `generate_synthetic.py` — creates fake schema-compatible outcomes for testing analysis before collection
-- `analyze_results.py` — preregistered confirmatory analysis
-- `tests/test_coding.py` — basic coder/readability checks
-- `requirements.txt` — Python dependencies
+The Study 1 directory contains the frozen preregistration, collection/coding/analysis code, raw and coded data, blinded adjudication artifacts, synthetic validation data, and software tests. The original file contents and Git history are preserved; the project was reorganized into study directories only after Study 1 collection and analysis.
 
-## Intended workflow
+### Study 2 — pre-collection
 
-Create an environment and install dependencies:
+`study2/` contains the contemporaneous eight-referent extension:
 
-    python -m venv .venv
-    .venv/Scripts/activate        # Windows
-    pip install -r requirements.txt
+- mommy / daddy
+- mom / dad
+- girlfriend / boyfriend
+- wife / husband
 
-Test the coder:
+Planned design: 2 models × 3 system-prompt conditions × 8 referents × 2 emergency-cue conditions × 60 repetitions = **5,760 responses**.
 
-    python -m unittest discover -s tests
+Study 2 is under construction and must not be collected until its preregistration, analysis code, synthetic checks, manifest, and freeze commit are complete.
 
-Generate fake data and run the confirmatory analysis before collecting real responses:
+## Cross-study records
 
-    python generate_synthetic.py
-    python analyze_results.py --input synthetic/results.jsonl --outdir synthetic/analysis
+`checkpoints/` contains timestamped research checkpoints written at major boundaries in the project. These are narrative provenance records and are kept separate from the frozen materials for either study.
 
-Check the full planned design without making API calls:
+## Repository layout
 
-    python run_experiment.py dry-run
+```text
+.
+├── README.md
+├── LICENSE
+├── checkpoints/
+├── study1/
+└── study2/
+```
 
-Run the technical API probe. The probe uses unrelated text and never exposes an experimental prompt:
-
-    python run_experiment.py probe
-
-Set `OPENAI_API_KEY` and `ANTHROPIC_API_KEY`, then collect:
-
-    python run_experiment.py run
-
-Code responses:
-
-    python code_responses.py --indir ./data
-
-If `adjudicate_blind.csv` contains rows, give only that file and the coding definitions from the preregistration to the human adjudicator. Keep `adjudication_key.jsonl` separate. After the completed blind coding file is returned:
-
-    python code_responses.py --indir ./data --human-codes ./data/human_codes.csv
-
-Then run the frozen confirmatory analysis:
-
-    python analyze_results.py --input data/results.jsonl --outdir analysis
-
-## Before collection
-
-The initial manifest records SHA-256 hashes of the preregistration, collector, coder, confirmatory analysis, synthetic-data generator, and requirements file. If any of those files change after the manifest is created, regenerate the manifest before collecting real data and preserve the change in version control.
+See the README inside each study directory for study-specific workflow and status.
 
 No API keys should ever be committed.

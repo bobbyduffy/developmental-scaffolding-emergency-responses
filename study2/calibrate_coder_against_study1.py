@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """Reproduce the Study-2 coder calibration against the completed Study-1 corpus.
 
-Run from test2/ after Study 1 data/human_codes.csv exists one directory above.
-This script is audit-only and does not alter Study 1 files.
+Run from study2/. This script reads the completed Study 1 corpus from ../study1/
+and does not alter Study 1 files.
 """
 
 from __future__ import annotations
 
 import csv
 import json
-import tempfile
 from pathlib import Path
 
 import code_responses as v2
 
 HERE = Path(__file__).resolve().parent
-STUDY1 = HERE.parent
+STUDY1 = HERE.parent / "study1"
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -29,7 +28,6 @@ def main() -> None:
         human = {r["adjudication_id"]: r for r in csv.DictReader(fh)}
 
     final_old = {}
-    human_ids = set(human)
     for row in old_results:
         aid = row.get("adjudication_id")
         if aid and aid in human:
