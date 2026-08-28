@@ -1,0 +1,463 @@
+{
+  "analysis_version": "study2-preregistered-v1",
+  "input_rows": 5760,
+  "eligible_rows_after_general_exclusions": 5760,
+  "emergency_rows": 2880,
+  "primary": {
+    "outcome": "first_ems_directive_word",
+    "n": 2880,
+    "relationship_summary": [
+      {
+        "relationship": "mommy",
+        "n": 360,
+        "mean": 9.98611111111111,
+        "sd": 6.341913139719157,
+        "median": 10.0
+      },
+      {
+        "relationship": "daddy",
+        "n": 360,
+        "mean": 14.238888888888889,
+        "sd": 9.991564067874403,
+        "median": 13.0
+      },
+      {
+        "relationship": "mom",
+        "n": 360,
+        "mean": 13.272222222222222,
+        "sd": 10.34304662236296,
+        "median": 11.0
+      },
+      {
+        "relationship": "dad",
+        "n": 360,
+        "mean": 15.183333333333334,
+        "sd": 12.357927997893263,
+        "median": 14.0
+      },
+      {
+        "relationship": "girlfriend",
+        "n": 360,
+        "mean": 24.95277777777778,
+        "sd": 22.685336779454616,
+        "median": 17.0
+      },
+      {
+        "relationship": "boyfriend",
+        "n": 360,
+        "mean": 24.275,
+        "sd": 18.980401488601963,
+        "median": 19.0
+      },
+      {
+        "relationship": "wife",
+        "n": 360,
+        "mean": 19.569444444444443,
+        "sd": 18.7377639843551,
+        "median": 16.0
+      },
+      {
+        "relationship": "husband",
+        "n": 360,
+        "mean": 16.319444444444443,
+        "sd": 8.375961074675645,
+        "median": 17.0
+      }
+    ],
+    "H1_relationship_omnibus": {
+      "stat": 406.1961218723034,
+      "df": 7,
+      "p": 1.1185964019530716e-83
+    },
+    "H2_matched_contrasts": [
+      {
+        "male_term": "daddy",
+        "female_term": "mommy",
+        "estimate": 4.252777777777689,
+        "se": 0.6045621735940437,
+        "ci95": [
+          3.0678359175333636,
+          5.437719638022015
+        ],
+        "p": 2.000119900329389e-12,
+        "p_holm": 8.000479601317555e-12
+      },
+      {
+        "male_term": "dad",
+        "female_term": "mom",
+        "estimate": 1.9111111111110914,
+        "se": 0.8360442274321513,
+        "ci95": [
+          0.2724644253440749,
+          3.549757796878108
+        ],
+        "p": 0.02226027662271873,
+        "p_holm": 0.04452055324543746
+      },
+      {
+        "male_term": "boyfriend",
+        "female_term": "girlfriend",
+        "estimate": -0.6777777777778322,
+        "se": 1.5000140886713382,
+        "ci95": [
+          -3.617805391573655,
+          2.2622498360179906
+        ],
+        "p": 0.6513787700756646,
+        "p_holm": 0.6513787700756646
+      },
+      {
+        "male_term": "husband",
+        "female_term": "wife",
+        "estimate": -3.2500000000000053,
+        "se": 1.0416751165339306,
+        "ci95": [
+          -5.291683228406509,
+          -1.2083167715935015
+        ],
+        "p": 0.0018086657925894356,
+        "p_holm": 0.005425997377768306
+      }
+    ],
+    "H3_pair_by_referent_sex_interaction": {
+      "stat": 42.4845905801446,
+      "df": 3,
+      "p": 3.1661236924382103e-09
+    }
+  },
+  "presence": {
+    "ems_instruction": {
+      "descriptive": {
+        "n": 2880,
+        "mean": 1.0,
+        "constant": true
+      },
+      "omnibus": null
+    },
+    "has_911": {
+      "descriptive": {
+        "n": 2880,
+        "mean": 0.9982638888888888,
+        "constant": false
+      },
+      "omnibus": {
+        "stat": 5.0157441056062115,
+        "df": 7,
+        "p": 0.6580418030192978
+      }
+    }
+  },
+  "secondary_prominence": {
+    "family": "prominence",
+    "outcomes": [
+      {
+        "outcome": "first_ems_directive_prop",
+        "n": 2880,
+        "omnibus": {
+          "stat": 210.02080215850572,
+          "df": 7,
+          "p": 8.638332835262276e-42,
+          "p_holm_family": 3.45533313410491e-41
+        }
+      },
+      {
+        "outcome": "first_911_word",
+        "n": 2875,
+        "omnibus": {
+          "stat": 430.2011952070038,
+          "df": 7,
+          "p": 7.908217068918285e-89,
+          "p_holm_family": 3.9541085344591426e-88
+        }
+      },
+      {
+        "outcome": "first_911_prop",
+        "n": 2875,
+        "omnibus": {
+          "stat": 208.22321500594757,
+          "df": 7,
+          "p": 2.077436581586338e-41,
+          "p_holm_family": 6.232309744759014e-41
+        }
+      },
+      {
+        "outcome": "first_emergency_cue_word",
+        "n": 2880,
+        "omnibus": {
+          "stat": 193.2598110112486,
+          "df": 7,
+          "p": 3.066422052297988e-38,
+          "p_holm_family": 6.132844104595976e-38
+        }
+      },
+      {
+        "outcome": "first_emergency_cue_prop",
+        "n": 2880,
+        "omnibus": {
+          "stat": 92.04215803636514,
+          "df": 7,
+          "p": 4.7078793135193945e-17,
+          "p_holm_family": 4.7078793135193945e-17
+        }
+      }
+    ]
+  },
+  "secondary_accessibility": {
+    "family": "accessibility",
+    "outcomes": [
+      {
+        "outcome": "surface_word_count",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1337.7480191259513,
+          "df": 7,
+          "p": 1.1353165930978345e-284,
+          "p_holm_family": 3.4059497792935035e-284
+        }
+      },
+      {
+        "outcome": "fk_grade",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1305.9729742389907,
+          "df": 7,
+          "p": 8.490231268206864e-278,
+          "p_holm_family": 1.698046253641373e-277
+        }
+      },
+      {
+        "outcome": "flesch_reading_ease",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1986.3799554168058,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      },
+      {
+        "outcome": "words_per_sentence",
+        "n": 2880,
+        "omnibus": {
+          "stat": 301.6341362530495,
+          "df": 7,
+          "p": 2.708571058392895e-61,
+          "p_holm_family": 2.708571058392895e-61
+        }
+      },
+      {
+        "outcome": "syllables_per_word",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1704.2611541705778,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      }
+    ]
+  },
+  "secondary_register": {
+    "family": "register",
+    "outcomes": [
+      {
+        "outcome": "mentions_adult",
+        "n": 2880,
+        "omnibus": {
+          "stat": 9244.27235041429,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      },
+      {
+        "outcome": "mentions_trusted_adult",
+        "n": 2880,
+        "omnibus": {
+          "stat": 565.7376701062411,
+          "df": 7,
+          "p": 5.79233980220734e-118,
+          "p_holm_family": 1.158467960441468e-117
+        }
+      },
+      {
+        "outcome": "mentions_neighbor",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1427.547383585937,
+          "df": 7,
+          "p": 4.225431942969201e-304,
+          "p_holm_family": 2.1127159714846005e-303
+        }
+      },
+      {
+        "outcome": "mentions_naloxone_or_narcan",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1051.4705563979412,
+          "df": 7,
+          "p": 9.088191726296423e-223,
+          "p_holm_family": 2.726457517888927e-222
+        }
+      },
+      {
+        "outcome": "mentions_recovery_position",
+        "n": 2880,
+        "omnibus": {
+          "stat": 10106.13388040223,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      },
+      {
+        "outcome": "mentions_opioid",
+        "n": 2880,
+        "omnibus": {
+          "stat": 1411.8464790245105,
+          "df": 7,
+          "p": 1.055087558189622e-300,
+          "p_holm_family": 4.220350232758488e-300
+        }
+      },
+      {
+        "outcome": "mentions_poison_control",
+        "n": 2880,
+        "omnibus": {
+          "stat": 55.614343985951244,
+          "df": 7,
+          "p": 1.1263290179024138e-09,
+          "p_holm_family": 1.1263290179024138e-09
+        }
+      }
+    ]
+  },
+  "emergency_moderation_accessibility": {
+    "outcomes": [
+      {
+        "outcome": "surface_word_count",
+        "n": 5760,
+        "interaction": {
+          "stat": 822.6925566087575,
+          "df": 7,
+          "p": 2.350525480181268e-173,
+          "p_holm_family": 1.175262740090634e-172
+        }
+      },
+      {
+        "outcome": "fk_grade",
+        "n": 5760,
+        "interaction": {
+          "stat": 66.27250128781616,
+          "df": 7,
+          "p": 8.342140068294256e-12,
+          "p_holm_family": 8.342140068294256e-12
+        }
+      },
+      {
+        "outcome": "flesch_reading_ease",
+        "n": 5760,
+        "interaction": {
+          "stat": 96.21515986161111,
+          "df": 7,
+          "p": 6.512960149725044e-18,
+          "p_holm_family": 1.3025920299450089e-17
+        }
+      },
+      {
+        "outcome": "words_per_sentence",
+        "n": 5760,
+        "interaction": {
+          "stat": 175.7255851783443,
+          "df": 7,
+          "p": 1.5559698994424452e-34,
+          "p_holm_family": 4.667909698327336e-34
+        }
+      },
+      {
+        "outcome": "syllables_per_word",
+        "n": 5760,
+        "interaction": {
+          "stat": 292.1457319110376,
+          "df": 7,
+          "p": 2.875102083779709e-59,
+          "p_holm_family": 1.1500408335118836e-58
+        }
+      }
+    ]
+  },
+  "emergency_moderation_register": {
+    "outcomes": [
+      {
+        "outcome": "mentions_adult",
+        "n": 5760,
+        "interaction": {
+          "stat": 1120.7844738341178,
+          "df": 7,
+          "p": 9.469699315335616e-238,
+          "p_holm_family": 4.734849657667808e-237
+        }
+      },
+      {
+        "outcome": "mentions_trusted_adult",
+        "n": 5760,
+        "interaction": {
+          "stat": 1714.6573890966472,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      },
+      {
+        "outcome": "mentions_neighbor",
+        "n": 5760,
+        "interaction": {
+          "stat": 88.24410450075521,
+          "df": 7,
+          "p": 2.836839487068027e-16,
+          "p_holm_family": 2.836839487068027e-16
+        }
+      },
+      {
+        "outcome": "mentions_naloxone_or_narcan",
+        "n": 5760,
+        "interaction": {
+          "stat": 819.9566246195415,
+          "df": 7,
+          "p": 9.154974550903938e-173,
+          "p_holm_family": 2.7464923652711816e-172
+        }
+      },
+      {
+        "outcome": "mentions_recovery_position",
+        "n": 5760,
+        "interaction": {
+          "stat": 11714.848655435233,
+          "df": 7,
+          "p": 0.0,
+          "p_holm_family": 0.0
+        }
+      },
+      {
+        "outcome": "mentions_opioid",
+        "n": 5760,
+        "interaction": {
+          "stat": 1087.3188832996607,
+          "df": 7,
+          "p": 1.6234674529351248e-230,
+          "p_holm_family": 6.493869811740499e-230
+        }
+      },
+      {
+        "outcome": "mentions_poison_control",
+        "n": 5760,
+        "interaction": {
+          "stat": 171.0048214769718,
+          "df": 7,
+          "p": 1.541268753679192e-33,
+          "p_holm_family": 3.082537507358384e-33
+        }
+      }
+    ]
+  }
+}
