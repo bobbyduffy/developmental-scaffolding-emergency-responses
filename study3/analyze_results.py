@@ -45,7 +45,13 @@ def joint_wald(model, names):
     for i,n in enumerate(names): R[i,pnames.index(n)]=1
     try:
         w=model.wald_test(R, scalar=True)
-        return {"estimable":True,"statistic":float(w.statistic),"df":int(len(names)),"p":float(w.pvalue)}
+        cov_r = R @ np.asarray(model.cov_params()) @ R.T
+        rank = int(np.linalg.matrix_rank(cov_r))
+        out={"estimable":True,"statistic":float(w.statistic),"df":int(len(names)),"p":float(w.pvalue)}
+        if rank < len(names):
+            out["covariance_rank"] = rank
+            out["rank_deficient"] = True
+        return out
     except Exception as exc:
         return {"estimable":False,"reason":str(exc)}
 
@@ -54,22 +60,37 @@ def fit_hc3(df, formula):
     return smf.ols(formula, data=df).fit(cov_type="HC3")
 
 
+def _design_info(model):
+    """Return Patsy DesignInfo across statsmodels versions.
+
+    statsmodels 0.14 commonly exposes data.design_info directly; 0.15 may use
+    PandasData without that attribute while retaining DesignInfo on orig_exog.
+    """
+    data = model.model.data
+    info = getattr(data, "design_info", None)
+    if info is None:
+        info = getattr(getattr(data, "orig_exog", None), "design_info", None)
+    if info is None:
+        raise RuntimeError("Patsy design_info unavailable; cannot build frozen contrasts")
+    return info
+
+
 def equal_variant_prediction(model, relationship, certainty):
     rows=[]
+    frame=model.model.data.frame
     for variant in ("A","B"):
-        for model_key in sorted(model.model.data.frame["model_key"].dropna().unique()):
-            for sys in sorted(model.model.data.frame["sysprompt_condition"].dropna().unique()):
+        for model_key in sorted(frame["model_key"].dropna().unique()):
+            for sys in sorted(frame["sysprompt_condition"].dropna().unique()):
                 rows.append({"relationship":relationship,"certainty":certainty,"prompt_variant":variant,"model_key":model_key,"sysprompt_condition":sys})
-    X=model.model.data.design_info
     from patsy import build_design_matrices
-    mat=np.asarray(build_design_matrices([X],pd.DataFrame(rows))[0])
+    mat=np.asarray(build_design_matrices([_design_info(model)],pd.DataFrame(rows))[0])
     v=mat.mean(axis=0)
     est=float(v@model.params.values)
     return est,v
 
 
 def contrast(model, v):
-    beta=model.params.values; cov=np.asarray(model.cov_params()); est=float(v@beta); se=float(np.sqrt(v@cov@v));
+    beta=model.params.values; cov=np.asarray(model.cov_params()); est=float(v@beta); se=float(np.sqrt(max(float(v@cov@v),0.0)))
     from scipy.stats import norm
     z=est/se if se>0 else np.nan; p=float(2*norm.sf(abs(z))) if np.isfinite(z) else np.nan
     return {"estimate":est,"se":se,"ci_low":est-1.96*se,"ci_high":est+1.96*se,"p_raw":p}
@@ -111,6 +132,8 @@ def analyze(df):
 
     lat=v[(v["ems_instruction"]==1)&v["first_ems_directive_word"].notna()].copy()
     results["n_latency"]=len(lat)
+    if not len(lat):
+        raise RuntimeError("No EMS-present rows with latency; primary analysis cannot be fit")
     primary=fit_hc3(lat,PRIMARY_FORMULA)
     results["H1_relationship_x_certainty"]=joint_wald(primary,interaction_names(primary))
     results["pair_attenuation"]=pair_attenuation(primary)
