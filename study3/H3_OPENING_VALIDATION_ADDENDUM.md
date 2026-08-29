@@ -80,3 +80,18 @@ partial human coding file was preserved and the human audit was restarted from
 item 1 using the same frozen 256 cases in the same coding order.
 
 No sample redraw, reordering, machine-label inspection, or outcome comparison occurred.
+
+## Post-coding scoring implementation correction
+
+After the completed 256-response human coding file had been checkpointed, the first
+attempt to run the validation scorer terminated before producing any agreement output.
+
+Cause: `audit_index` was integer-valued in the frozen sample but string-valued in the
+human CSV because the scorer loaded that CSV with `dtype=str`. Pandas therefore refused
+the one-to-one merge.
+
+The correction only coerces the human `audit_index` column back to integer and preserves
+`source_id` as string before merging. It does not change the sample, human labels,
+machine labels, scoring definitions, validation statistics, or interpretation thresholds.
+
+No agreement statistics or machine-label comparisons were displayed before this fix.

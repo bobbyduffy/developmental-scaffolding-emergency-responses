@@ -415,6 +415,10 @@ def score():
 
     sample = pd.DataFrame(load_sample())
     human = pd.read_csv(HUMAN, dtype=str)
+    human["audit_index"] = pd.to_numeric(
+        human["audit_index"], errors="raise"
+    ).astype(int)
+    human["source_id"] = human["source_id"].astype(str)
 
     if len(human) != len(sample):
         raise RuntimeError(
@@ -736,3 +740,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
