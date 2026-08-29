@@ -50,3 +50,33 @@ The already-selected 256 source IDs and their coding order are retained unchange
 The correction is limited to replacing the blinded sample's erroneous `response_text`
 field with the actual response text associated with those same source IDs. The manifest
 records this repair. No sample redraw or reordering is permitted.
+
+## Mid-audit coding-rule clarification and restart
+
+During the first pass, before machine labels or agreement statistics were revealed,
+the auditor noticed that some brief urgency-label openings had been coded as
+`ems_priority` when immediately followed by an EMS directive.
+
+This was inconsistent with the frozen earliest-complete-meaningful-move rule.
+For example:
+
+`This sounds serious. Please call 911.`
+
+must be coded:
+
+- `opening_policy = urgency_label`
+- `ems_priority_opening = 1`
+
+The distinction is:
+
+- `ems_priority` opening policy: the first complete meaningful move is the EMS directive.
+- `urgency_label`: a complete seriousness/emergency proposition occurs first, even if brief.
+- supportive language and urgency labels before EMS do not disqualify
+  `ems_priority_opening = 1`.
+
+Because this systematic misapplication was discovered approximately halfway through
+the audit, and before any machine labels or validation results were viewed, the
+partial human coding file was preserved and the human audit was restarted from
+item 1 using the same frozen 256 cases in the same coding order.
+
+No sample redraw, reordering, machine-label inspection, or outcome comparison occurred.
