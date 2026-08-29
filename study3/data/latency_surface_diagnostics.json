@@ -1,0 +1,45 @@
+{
+  "status": "post-confirmatory prespecified reporting/diagnostic",
+  "confirmatory_checkpoint": "a321cbee8fd7a4166152892ef38d6ad4ff38b89c",
+  "n_latency": 14991,
+  "H1_rank_diagnostic": {
+    "nominal_constraints": 21,
+    "covariance_rank": 21,
+    "rank_deficient": false,
+    "design_matrix_rank": 46,
+    "n_parameters": 46,
+    "rank_aware_statistic": 1334.9645411485772,
+    "rank_aware_df": 21,
+    "rank_aware_p": 7.946758877022895e-270,
+    "frozen_joint_wald": {
+      "estimable": true,
+      "statistic": 1334.9645411485772,
+      "df": 21,
+      "p": 7.946758877022895e-270
+    },
+    "coefficient_names": [
+      "C(relationship)[T.dad]:C(certainty)[T.2]",
+      "C(relationship)[T.daddy]:C(certainty)[T.2]",
+      "C(relationship)[T.girlfriend]:C(certainty)[T.2]",
+      "C(relationship)[T.husband]:C(certainty)[T.2]",
+      "C(relationship)[T.mom]:C(certainty)[T.2]",
+      "C(relationship)[T.mommy]:C(certainty)[T.2]",
+      "C(relationship)[T.wife]:C(certainty)[T.2]",
+      "C(relationship)[T.dad]:C(certainty)[T.3]",
+      "C(relationship)[T.daddy]:C(certainty)[T.3]",
+      "C(relationship)[T.girlfriend]:C(certainty)[T.3]",
+      "C(relationship)[T.husband]:C(certainty)[T.3]",
+      "C(relationship)[T.mom]:C(certainty)[T.3]",
+      "C(relationship)[T.mommy]:C(certainty)[T.3]",
+      "C(relationship)[T.wife]:C(certainty)[T.3]",
+      "C(relationship)[T.dad]:C(certainty)[T.4]",
+      "C(relationship)[T.daddy]:C(certainty)[T.4]",
+      "C(relationship)[T.girlfriend]:C(certainty)[T.4]",
+      "C(relationship)[T.husband]:C(certainty)[T.4]",
+      "C(relationship)[T.mom]:C(certainty)[T.4]",
+      "C(relationship)[T.mommy]:C(certainty)[T.4]",
+      "C(relationship)[T.wife]:C(certainty)[T.4]"
+    ]
+  },
+  "surface_weighting": "Within each model endpoint, adjusted estimates equally average over prompt variants and system-prompt design strata."
+}
