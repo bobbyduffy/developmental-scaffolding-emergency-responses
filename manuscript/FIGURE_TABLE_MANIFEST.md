@@ -17,7 +17,7 @@ should be documented by revising its specification.
 ## Figures
 
 ### Figure 1 — Three-study design progression
-**Status:** PLANNED
+**Status:** SPEC FROZEN / RENDERED / VERIFIED
 
 Scientific job:
 Orient the reader to the sequential research program:
@@ -123,3 +123,4 @@ Likely supplementary material includes:
 5. Freeze and render Figure 4.
 6. Freeze Tables 1-3.
 7. Draft manuscript from the frozen visual/reporting architecture.
+
