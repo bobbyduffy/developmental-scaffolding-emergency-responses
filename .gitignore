@@ -6,3 +6,6 @@ venv/
 .env.*
 .DS_Store
 Thumbs.db
+
+# Study 3 generated synthetic test data
+study3/synthetic_data/
