@@ -229,3 +229,67 @@ endpoints at L3/L4. The within-10 and latency measures are conditional on EMS pr
 - [ ] Claude/GPT groups visually distinguishable
 - [ ] Conditional-on-EMS caveat preserved
 - [ ] Figure labeled descriptive rather than inferential
+
+---
+
+# Revision 1 — Visual grammar supersession
+
+**Decision made before final rendering.**
+
+The originally specified heatmap representation is superseded by three aligned
+horizontal-bar small multiples.
+
+Reason:
+
+The heatmap treatment visually encouraged two misleading readings:
+
+1. contiguous cells made independent model × certainty conditions resemble a continuous
+   or stacked quantity;
+2. independently scaled color columns encouraged visual comparison of "heat" across
+   endpoints measured in unlike units.
+
+The underlying scientific quantities, conditioning rules, source files, and intended
+interpretation are unchanged.
+
+## Revised visual grammar
+
+Use three aligned horizontal-bar panels with identical categorical rows:
+
+1. EMS presence spread
+2. EMS ≤10-word spread
+3. EMS latency spread
+
+Rows, top to bottom:
+
+- Claude L1
+- Claude L2
+- Claude L3
+- Claude L4
+- GPT L1
+- GPT L2
+- GPT L3
+- GPT L4
+
+A visible gap should separate the Claude and GPT groups.
+
+Each bar begins at zero.
+
+Each bar should have its numerical value printed directly.
+
+The first two panels are both expressed in percentage points and should therefore share
+the same x-axis range.
+
+The latency panel is expressed in surface words and should use a separate word-based
+x-axis range.
+
+Preferred axis ranges:
+
+- EMS presence spread: 0–65 percentage points
+- EMS ≤10-word spread: 0–65 percentage points
+- EMS latency spread: 0–85 words
+
+The revised figure should make magnitude visible through bar length rather than color
+intensity.
+
+This revision supersedes Section 4 ("Visual grammar") of the original specification.
+All other sections remain in force.
