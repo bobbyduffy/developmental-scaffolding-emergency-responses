@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Study 3 response coder, prospective v3.0.0 prefreeze candidate."""
+"""Study 3 response coder, prospective v3.0.0 with recovery canonicalization."""
 from __future__ import annotations
 
 import argparse, csv, hashlib, json, re
@@ -161,33 +161,65 @@ def load_human_codes(path: Optional[Path]):
     with open(path,newline="",encoding="utf-8") as fh: return {r["adjudication_id"]:r for r in csv.DictReader(fh)}
 
 
+def canonical_raw_records(path: Path) -> list[dict]:
+    """Return one substantive raw record per trial ID.
+
+    Post-freeze recovery retained earlier `missing` records and appended one
+    successful record under the same trial ID.  For coding, a successful record
+    is canonical.  Multiple successful records for a single trial are an error.
+    If a trial has no successful record, its final raw record is retained so the
+    normal no-response path remains explicit.
+    """
+    histories: dict[str, list[dict]] = {}
+    order: list[str] = []
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            if not line.strip():
+                continue
+            rec=json.loads(line)
+            tid=rec["trial_id"]
+            if tid not in histories:
+                histories[tid]=[]
+                order.append(tid)
+            histories[tid].append(rec)
+
+    canonical=[]
+    for tid in order:
+        recs=histories[tid]
+        oks=[rec for rec in recs if rec.get("status")=="ok"]
+        if len(oks)>1:
+            raise RuntimeError(f"trial {tid} has {len(oks)} successful raw records")
+        canonical.append(oks[0] if oks else recs[-1])
+    return canonical
+
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--indir",type=Path,default=Path("./data")); ap.add_argument("--human-codes",type=Path,default=None); args=ap.parse_args()
     human=load_human_codes(args.human_codes); rows=[]; blind=[]; key=[]
-    with open(args.indir/"full.jsonl",encoding="utf-8") as fh:
-        for line in fh:
-            if not line.strip(): continue
-            rec=json.loads(line); out={k:rec.get(k) for k in PASSTHROUGH}; out["coding_scheme_version"]=CODING_SCHEME_VERSION
-            text=rec.get("response")
-            if rec.get("status")!="ok" or not text:
-                out.update({"ems_instruction":None,"coder_flags":["no_response"],"needs_human_review":False,"code_source":"none"}); rows.append(out); continue
-            coded=code_response(text); out.update(coded); out["surface_word_count"]=n_surface_words(text); out["response_sha256"]=hashlib.sha256(text.encode()).hexdigest()
-            aid=adjudication_id(out["trial_id"]); out["adjudication_id"]=aid if out["needs_human_review"] else None
-            if out["needs_human_review"]:
-                out["ems_instruction"]=None; out["code_source"]="awaiting_human"
-                blind.append({"adjudication_id":aid,"response":text.replace("\n"," "),"ems_instruction":""})
-                key.append({"adjudication_id":aid,"trial_id":out["trial_id"],"review_reason":out["review_reason"]})
-            else:
-                out["ems_instruction"]=out["auto_ems_instruction"]; out["code_source"]="auto_v3"
-            if aid in human:
-                out["ems_instruction"]=int(human[aid]["ems_instruction"]); out["code_source"]="human_blind"; out["needs_human_review"]=False
-            rows.append(out)
+    raw_records=canonical_raw_records(args.indir/"full.jsonl")
+    for rec in raw_records:
+        out={k:rec.get(k) for k in PASSTHROUGH}; out["coding_scheme_version"]=CODING_SCHEME_VERSION
+        text=rec.get("response")
+        if rec.get("status")!="ok" or not text:
+            out.update({"ems_instruction":None,"coder_flags":["no_response"],"needs_human_review":False,"code_source":"none"}); rows.append(out); continue
+        coded=code_response(text); out.update(coded); out["surface_word_count"]=n_surface_words(text); out["response_sha256"]=hashlib.sha256(text.encode()).hexdigest()
+        aid=adjudication_id(out["trial_id"]); out["adjudication_id"]=aid if out["needs_human_review"] else None
+        if out["needs_human_review"]:
+            out["ems_instruction"]=None; out["code_source"]="awaiting_human"
+            blind.append({"adjudication_id":aid,"response":text.replace("\n"," "),"ems_instruction":""})
+            key.append({"adjudication_id":aid,"trial_id":out["trial_id"],"review_reason":out["review_reason"]})
+        else:
+            out["ems_instruction"]=out["auto_ems_instruction"]; out["code_source"]="auto_v3"
+        if aid in human:
+            out["ems_instruction"]=int(human[aid]["ems_instruction"]); out["code_source"]="human_blind"; out["needs_human_review"]=False
+        rows.append(out)
     with open(args.indir/"results.jsonl","w",encoding="utf-8") as fh:
-        for r in rows: fh.write(json.dumps(r,ensure_ascii=False)+"\n")
+        for row in rows: fh.write(json.dumps(row,ensure_ascii=False)+"\n")
     with open(args.indir/"adjudicate_blind.csv","w",newline="",encoding="utf-8") as fh:
         w=csv.DictWriter(fh,fieldnames=["adjudication_id","response","ems_instruction"]); w.writeheader(); w.writerows(blind)
     with open(args.indir/"adjudication_key.jsonl","w",encoding="utf-8") as fh:
-        for r in key: fh.write(json.dumps(r)+"\n")
-    print(f"Wrote {len(rows)} rows; blind review {len(blind)}")
+        for row in key: fh.write(json.dumps(row)+"\n")
+    print(f"Canonical raw trials: {len(raw_records)}")
+    print(f"Wrote {len(rows)} coded rows; blind review {len(blind)}")
 
 if __name__=="__main__": main()
