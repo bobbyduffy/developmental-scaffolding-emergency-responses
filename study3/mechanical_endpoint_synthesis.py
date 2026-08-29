@@ -67,7 +67,7 @@ def prediction_vector(model, relationship, certainty):
 
     mat = np.asarray(
         build_design_matrices(
-            [model.model.data.design_info],
+            [frozen._design_info(model)],
             pd.DataFrame(rows),
         )[0],
         dtype=float,
@@ -423,3 +423,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
