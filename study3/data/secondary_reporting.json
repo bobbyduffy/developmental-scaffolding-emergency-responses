@@ -1,0 +1,2144 @@
+{
+  "status": "post-confirmatory prespecified secondary/reporting analyses",
+  "confirmatory_checkpoint": "a321cbee8fd7a4166152892ef38d6ad4ff38b89c",
+  "n_valid": 15360,
+  "n_latency": 14991,
+  "latency_relationship_certainty_descriptives": [
+    {
+      "relationship": "boyfriend",
+      "certainty": 1,
+      "n": 386,
+      "mean": 63.97409326424871,
+      "sd": 49.296445985872374,
+      "median": 42.0,
+      "q1": 28.0,
+      "q3": 88.0,
+      "iqr": 60.0
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "n": 480,
+      "mean": 31.8125,
+      "sd": 36.273408682573894,
+      "median": 17.0,
+      "q1": 1.0,
+      "q3": 57.25,
+      "iqr": 56.25
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 3,
+      "n": 480,
+      "mean": 4.85,
+      "sd": 11.139202716566011,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 7.25,
+      "iqr": 6.25
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.652083333333333,
+      "sd": 2.992299761655695,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 6.0,
+      "iqr": 5.0
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "n": 476,
+      "mean": 40.285714285714285,
+      "sd": 37.33955551442783,
+      "median": 25.0,
+      "q1": 15.0,
+      "q3": 64.25,
+      "iqr": 49.25
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "n": 480,
+      "mean": 7.94375,
+      "sd": 16.528679525856745,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 10.0,
+      "iqr": 9.0
+    },
+    {
+      "relationship": "dad",
+      "certainty": 3,
+      "n": 480,
+      "mean": 3.064583333333333,
+      "sd": 4.279630326811932,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "dad",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.7,
+      "sd": 3.407225528748842,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 6.0,
+      "iqr": 5.0
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "n": 479,
+      "mean": 31.521920668058456,
+      "sd": 25.647494508157994,
+      "median": 24.0,
+      "q1": 15.5,
+      "q3": 38.0,
+      "iqr": 22.5
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "n": 480,
+      "mean": 5.1125,
+      "sd": 8.678666883378536,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 8.0,
+      "iqr": 7.0
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 3,
+      "n": 480,
+      "mean": 2.70625,
+      "sd": 3.2972378045683537,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.50625,
+      "sd": 2.5862900335784182,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 6.0,
+      "iqr": 5.0
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "n": 352,
+      "mean": 63.27840909090909,
+      "sd": 50.458318696394606,
+      "median": 41.0,
+      "q1": 27.0,
+      "q3": 93.0,
+      "iqr": 66.0
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "n": 480,
+      "mean": 28.325,
+      "sd": 33.15199701457334,
+      "median": 16.0,
+      "q1": 1.0,
+      "q3": 56.0,
+      "iqr": 55.0
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 3,
+      "n": 480,
+      "mean": 4.052083333333333,
+      "sd": 6.867018679621962,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 7.0,
+      "iqr": 6.0
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.40625,
+      "sd": 2.5724496866599083,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 5.0,
+      "iqr": 4.0
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "n": 433,
+      "mean": 50.45034642032333,
+      "sd": 46.49953161970492,
+      "median": 29.0,
+      "q1": 19.0,
+      "q3": 79.0,
+      "iqr": 60.0
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "n": 480,
+      "mean": 15.175,
+      "sd": 26.948621183950678,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 17.0,
+      "iqr": 16.0
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "n": 480,
+      "mean": 2.66875,
+      "sd": 4.2906732978220345,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "husband",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.1666666666666665,
+      "sd": 2.6847853495203866,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "n": 480,
+      "mean": 37.61875,
+      "sd": 34.92453036164138,
+      "median": 25.0,
+      "q1": 12.0,
+      "q3": 61.25,
+      "iqr": 49.25
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "n": 480,
+      "mean": 10.277083333333334,
+      "sd": 20.820444621358035,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 11.0,
+      "iqr": 10.0
+    },
+    {
+      "relationship": "mom",
+      "certainty": 3,
+      "n": 480,
+      "mean": 1.925,
+      "sd": 2.7472894213982864,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "mom",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.1625,
+      "sd": 2.4346682737778247,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "n": 479,
+      "mean": 22.231732776617953,
+      "sd": 23.288228465611496,
+      "median": 17.0,
+      "q1": 1.0,
+      "q3": 30.0,
+      "iqr": 29.0
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "n": 479,
+      "mean": 6.722338204592902,
+      "sd": 12.67720180352852,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 7.0,
+      "iqr": 6.0
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 3,
+      "n": 480,
+      "mean": 2.9229166666666666,
+      "sd": 3.487570508462327,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 5.0,
+      "iqr": 4.0
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.6395833333333334,
+      "sd": 2.5881728413929674,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 6.0,
+      "iqr": 5.0
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "n": 390,
+      "mean": 49.62051282051282,
+      "sd": 48.33319009250093,
+      "median": 28.0,
+      "q1": 17.0,
+      "q3": 77.75,
+      "iqr": 60.75
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "n": 477,
+      "mean": 21.07337526205451,
+      "sd": 31.727053901961302,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 26.0,
+      "iqr": 25.0
+    },
+    {
+      "relationship": "wife",
+      "certainty": 3,
+      "n": 480,
+      "mean": 3.1958333333333333,
+      "sd": 6.535528670542229,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    },
+    {
+      "relationship": "wife",
+      "certainty": 4,
+      "n": 480,
+      "mean": 2.00625,
+      "sd": 2.459263620966909,
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "iqr": 0.0
+    }
+  ],
+  "adjusted_relationship_certainty_estimates": [
+    {
+      "estimate": 66.50654539349827,
+      "se": 2.1661998531086843,
+      "ci_low": 62.26079368140525,
+      "ci_high": 70.7522971055913,
+      "p_raw": 5.361656752237217e-207,
+      "relationship": "boyfriend",
+      "certainty": 1
+    },
+    {
+      "estimate": 31.81249999999955,
+      "se": 1.2926916573438396,
+      "ci_low": 29.27882435160562,
+      "ci_high": 34.346175648393476,
+      "p_raw": 9.994152618783256e-134,
+      "relationship": "boyfriend",
+      "certainty": 2
+    },
+    {
+      "estimate": 4.850000000000986,
+      "se": 0.5498151177077455,
+      "ci_low": 3.7723623692938055,
+      "ci_high": 5.927637630708167,
+      "p_raw": 1.1329312712284788e-18,
+      "relationship": "boyfriend",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.652083333333647,
+      "se": 0.42288998070231154,
+      "ci_low": 1.8232189711571165,
+      "ci_high": 3.480947695510178,
+      "p_raw": 3.5797313918301933e-10,
+      "relationship": "boyfriend",
+      "certainty": 4
+    },
+    {
+      "estimate": 40.355707183849276,
+      "se": 1.434042035893054,
+      "ci_low": 37.54498479349889,
+      "ci_high": 43.16642957419966,
+      "p_raw": 3.0682244497453586e-174,
+      "relationship": "dad",
+      "certainty": 1
+    },
+    {
+      "estimate": 7.94374999999839,
+      "se": 0.6446305978754242,
+      "ci_low": 6.680274028162559,
+      "ci_high": 9.207225971834221,
+      "p_raw": 6.815551880269551e-35,
+      "relationship": "dad",
+      "certainty": 2
+    },
+    {
+      "estimate": 3.064583333333185,
+      "se": 0.4022549191486132,
+      "ci_low": 2.2761636918019033,
+      "ci_high": 3.8530029748644665,
+      "p_raw": 2.5661957710625198e-14,
+      "relationship": "dad",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.699999999999081,
+      "se": 0.4163055356142676,
+      "ci_low": 1.8840411501951164,
+      "ci_high": 3.515958849803045,
+      "p_raw": 8.836694015410051e-11,
+      "relationship": "dad",
+      "certainty": 4
+    },
+    {
+      "estimate": 31.54087010384262,
+      "se": 1.0809736296726964,
+      "ci_low": 29.422161789684136,
+      "ci_high": 33.659578418001104,
+      "p_raw": 3.6663845236486756e-187,
+      "relationship": "daddy",
+      "certainty": 1
+    },
+    {
+      "estimate": 5.1125000000004786,
+      "se": 0.4937023134736053,
+      "ci_low": 4.144843465592212,
+      "ci_high": 6.080156534408745,
+      "p_raw": 3.9540369671729435e-25,
+      "relationship": "daddy",
+      "certainty": 2
+    },
+    {
+      "estimate": 2.706250000001985,
+      "se": 0.40631521417277316,
+      "ci_low": 1.9098721802233496,
+      "ci_high": 3.50262781978062,
+      "p_raw": 2.7295462790162612e-11,
+      "relationship": "daddy",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.506250000001108,
+      "se": 0.413624112510974,
+      "ci_low": 1.695546739479599,
+      "ci_high": 3.316953260522617,
+      "p_raw": 1.3676161236347248e-09,
+      "relationship": "daddy",
+      "certainty": 4
+    },
+    {
+      "estimate": 66.61500081334982,
+      "se": 2.356936500472973,
+      "ci_low": 61.99540527242279,
+      "ci_high": 71.23459635427685,
+      "p_raw": 9.7468011125734e-176,
+      "relationship": "girlfriend",
+      "certainty": 1
+    },
+    {
+      "estimate": 28.32499999999928,
+      "se": 1.1314330038127063,
+      "ci_low": 26.107391312526378,
+      "ci_high": 30.542608687472185,
+      "p_raw": 2.5674142137032276e-138,
+      "relationship": "girlfriend",
+      "certainty": 2
+    },
+    {
+      "estimate": 4.052083333334034,
+      "se": 0.43722764471071884,
+      "ci_low": 3.1951171497010247,
+      "ci_high": 4.909049516967043,
+      "p_raw": 1.9024912310811447e-20,
+      "relationship": "girlfriend",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.406249999999991,
+      "se": 0.4459274910240294,
+      "ci_low": 1.5322321175928935,
+      "ci_high": 3.280267882407089,
+      "p_raw": 6.81214491081547e-08,
+      "relationship": "girlfriend",
+      "certainty": 4
+    },
+    {
+      "estimate": 51.46744689415055,
+      "se": 1.924432393357366,
+      "ci_low": 47.69555940317011,
+      "ci_high": 55.23933438513099,
+      "p_raw": 1.4414577671533524e-157,
+      "relationship": "husband",
+      "certainty": 1
+    },
+    {
+      "estimate": 15.174999999999534,
+      "se": 0.9638121240017176,
+      "ci_low": 13.285928236956167,
+      "ci_high": 17.0640717630429,
+      "p_raw": 7.460212819513335e-56,
+      "relationship": "husband",
+      "certainty": 2
+    },
+    {
+      "estimate": 2.66875000000094,
+      "se": 0.4256762845395955,
+      "ci_low": 1.8344244823033327,
+      "ci_high": 3.503075517698547,
+      "p_raw": 3.6235940757012793e-10,
+      "relationship": "husband",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.166666666666945,
+      "se": 0.43854293435383834,
+      "ci_low": 1.3071225153334218,
+      "ci_high": 3.026210818000468,
+      "p_raw": 7.78812200982801e-07,
+      "relationship": "husband",
+      "certainty": 4
+    },
+    {
+      "estimate": 37.61874999999956,
+      "se": 1.3056869169109724,
+      "ci_low": 35.05960364285405,
+      "ci_high": 40.177896357145066,
+      "p_raw": 1.541148040496477e-182,
+      "relationship": "mom",
+      "certainty": 1
+    },
+    {
+      "estimate": 10.277083333332087,
+      "se": 0.7728707779350642,
+      "ci_low": 8.76225660857936,
+      "ci_high": 11.791910058084813,
+      "p_raw": 2.4002546947261694e-40,
+      "relationship": "mom",
+      "certainty": 2
+    },
+    {
+      "estimate": 1.9250000000001792,
+      "se": 0.44139000227702124,
+      "ci_low": 1.0598755955372177,
+      "ci_high": 2.790124404463141,
+      "p_raw": 1.2933777059040733e-05,
+      "relationship": "mom",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.1624999999994863,
+      "se": 0.42684193802660186,
+      "ci_low": 1.3258898014673466,
+      "ci_high": 2.9991101985316257,
+      "p_raw": 4.0566895161053956e-07,
+      "relationship": "mom",
+      "certainty": 4
+    },
+    {
+      "estimate": 22.25317804139064,
+      "se": 0.8921133097778197,
+      "ci_low": 20.504635954226114,
+      "ci_high": 24.001720128555167,
+      "p_raw": 2.4597522118723714e-137,
+      "relationship": "mommy",
+      "certainty": 1
+    },
+    {
+      "estimate": 6.759466257697791,
+      "se": 0.5213065462787737,
+      "ci_low": 5.737705426991394,
+      "ci_high": 7.781227088404187,
+      "p_raw": 1.8974825746684873e-38,
+      "relationship": "mommy",
+      "certainty": 2
+    },
+    {
+      "estimate": 2.9229166666663344,
+      "se": 0.4042684020164993,
+      "ci_low": 2.130550598713996,
+      "ci_high": 3.7152827346186728,
+      "p_raw": 4.825005725259345e-13,
+      "relationship": "mommy",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.6395833333323413,
+      "se": 0.4191788076995968,
+      "ci_low": 1.8179928702411314,
+      "ci_high": 3.461173796423551,
+      "p_raw": 3.033941494126241e-10,
+      "relationship": "mommy",
+      "certainty": 4
+    },
+    {
+      "estimate": 52.16109455616956,
+      "se": 2.0902163398520672,
+      "ci_low": 48.06427053005951,
+      "ci_high": 56.25791858227961,
+      "p_raw": 1.8902707931833656e-137,
+      "relationship": "wife",
+      "certainty": 1
+    },
+    {
+      "estimate": 21.196611193496093,
+      "se": 1.141605777479003,
+      "ci_low": 18.959063869637248,
+      "ci_high": 23.434158517354938,
+      "p_raw": 5.9029562010128065e-77,
+      "relationship": "wife",
+      "certainty": 2
+    },
+    {
+      "estimate": 3.1958333333347513,
+      "se": 0.45631204286984256,
+      "ci_low": 2.30146172930986,
+      "ci_high": 4.090204937359642,
+      "p_raw": 2.4944306946986745e-12,
+      "relationship": "wife",
+      "certainty": 3
+    },
+    {
+      "estimate": 2.0062500000005783,
+      "se": 0.4377959431367648,
+      "ci_low": 1.1481699514525192,
+      "ci_high": 2.8643300485486374,
+      "p_raw": 4.591983065000921e-06,
+      "relationship": "wife",
+      "certainty": 4
+    }
+  ],
+  "matched_pair_differences_all_certainty_levels": [
+    {
+      "estimate": 9.287692062451985,
+      "se": 1.4015152149123595,
+      "ci_low": 6.54072224122376,
+      "ci_high": 12.03466188368021,
+      "p_raw": 3.4282479174760483e-11,
+      "pair": "daddy-mommy",
+      "certainty": 1,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -1.6469662576973159,
+      "se": 0.7179630378463142,
+      "ci_low": -3.0541738118760917,
+      "ci_high": -0.23975870351854,
+      "p_raw": 0.021793775229907917,
+      "pair": "daddy-mommy",
+      "certainty": 2,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -0.21666666666434953,
+      "se": 0.5731709990371532,
+      "ci_low": -1.3400818247771698,
+      "ci_high": 0.9067484914484707,
+      "p_raw": 0.705420187807811,
+      "pair": "daddy-mommy",
+      "certainty": 3,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -0.1333333333312341,
+      "se": 0.5888936909790589,
+      "ci_low": -1.2875649676501895,
+      "ci_high": 1.0208983009877213,
+      "p_raw": 0.8208800249917593,
+      "pair": "daddy-mommy",
+      "certainty": 4,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 2.7369571838497198,
+      "se": 1.9392592455364055,
+      "ci_low": -1.063990937401635,
+      "ci_high": 6.5379053051010745,
+      "p_raw": 0.1581439233465609,
+      "pair": "dad-mom",
+      "certainty": 1,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -2.333333333333696,
+      "se": 1.0064183260966488,
+      "ci_low": -4.305913252483128,
+      "ci_high": -0.3607534141842641,
+      "p_raw": 0.020424728186587818,
+      "pair": "dad-mom",
+      "certainty": 2,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 1.139583333333002,
+      "se": 0.5971885414920179,
+      "ci_low": -0.03090620799135313,
+      "ci_high": 2.310072874657357,
+      "p_raw": 0.05635927997986793,
+      "pair": "dad-mom",
+      "certainty": 3,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 0.5374999999995946,
+      "se": 0.596241846100551,
+      "ci_low": -0.6311340183574852,
+      "ci_high": 1.7061340183566744,
+      "p_raw": 0.36733325157910013,
+      "pair": "dad-mom",
+      "certainty": 4,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -0.10845541985155371,
+      "se": 3.1907758511302036,
+      "ci_low": -6.362376088066752,
+      "ci_high": 6.145465248363645,
+      "p_raw": 0.9728848878512606,
+      "pair": "boyfriend-girlfriend",
+      "certainty": 1,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 3.487500000000267,
+      "se": 1.717903478977493,
+      "ci_low": 0.12040918120438082,
+      "ci_high": 6.8545908187961535,
+      "p_raw": 0.04234731335266512,
+      "pair": "boyfriend-girlfriend",
+      "certainty": 2,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 0.7979166666669477,
+      "se": 0.702470410024,
+      "ci_low": -0.5789253369800922,
+      "ci_high": 2.1747586703139876,
+      "p_raw": 0.2560100208485657,
+      "pair": "boyfriend-girlfriend",
+      "certainty": 3,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 0.24583333333365565,
+      "se": 0.6145626599699876,
+      "ci_low": -0.9587094802075201,
+      "ci_high": 1.4503761468748313,
+      "p_raw": 0.6891466061710785,
+      "pair": "boyfriend-girlfriend",
+      "certainty": 4,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -0.693647662018998,
+      "se": 2.824862292740528,
+      "ci_low": -6.230377755790433,
+      "ci_high": 4.843082431752436,
+      "p_raw": 0.8060298513604365,
+      "pair": "husband-wife",
+      "certainty": 1,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -6.0216111934965575,
+      "se": 1.493696042027833,
+      "ci_low": -8.949255435871109,
+      "ci_high": -3.093966951122005,
+      "p_raw": 5.5457440315788965e-05,
+      "pair": "husband-wife",
+      "certainty": 2,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": -0.5270833333338005,
+      "se": 0.6240360403754709,
+      "ci_low": -1.7501939724697235,
+      "ci_high": 0.6960273058021225,
+      "p_raw": 0.39831407730972224,
+      "pair": "husband-wife",
+      "certainty": 3,
+      "contrast": "male-coded minus female-coded latency"
+    },
+    {
+      "estimate": 0.16041666666637,
+      "se": 0.6196653880108922,
+      "ci_low": -1.0541274938349787,
+      "ci_high": 1.3749608271677187,
+      "p_raw": 0.7957307050477449,
+      "pair": "husband-wife",
+      "certainty": 4,
+      "contrast": "male-coded minus female-coded latency"
+    }
+  ],
+  "opening_policy_relationship_certainty": [
+    {
+      "relationship": "boyfriend",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 375,
+      "total": 480,
+      "proportion": 0.78125
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 35,
+      "total": 480,
+      "proportion": 0.07291666666666667
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 67,
+      "total": 480,
+      "proportion": 0.13958333333333334
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 166,
+      "total": 480,
+      "proportion": 0.3458333333333333
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 12,
+      "total": 480,
+      "proportion": 0.025
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 156,
+      "total": 480,
+      "proportion": 0.325
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 86,
+      "total": 480,
+      "proportion": 0.17916666666666667
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 53,
+      "total": 480,
+      "proportion": 0.11041666666666666
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 3,
+      "opening_policy": "conditional_assessment",
+      "n": 35,
+      "total": 480,
+      "proportion": 0.07291666666666667
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 55,
+      "total": 480,
+      "proportion": 0.11458333333333333
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 389,
+      "total": 480,
+      "proportion": 0.8104166666666667
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 3,
+      "opening_policy": "interim_action",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 4,
+      "opening_policy": "conditional_assessment",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 9,
+      "total": 480,
+      "proportion": 0.01875
+    },
+    {
+      "relationship": "boyfriend",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 470,
+      "total": 480,
+      "proportion": 0.9791666666666666
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 205,
+      "total": 480,
+      "proportion": 0.4270833333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 71,
+      "total": 480,
+      "proportion": 0.14791666666666667
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 58,
+      "total": 480,
+      "proportion": 0.12083333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 42,
+      "total": 480,
+      "proportion": 0.0875
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 97,
+      "total": 480,
+      "proportion": 0.20208333333333334
+    },
+    {
+      "relationship": "dad",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 7,
+      "total": 480,
+      "proportion": 0.014583333333333334
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 49,
+      "total": 480,
+      "proportion": 0.10208333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 399,
+      "total": 480,
+      "proportion": 0.83125
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 25,
+      "total": 480,
+      "proportion": 0.052083333333333336
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 37,
+      "total": 480,
+      "proportion": 0.07708333333333334
+    },
+    {
+      "relationship": "dad",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 442,
+      "total": 480,
+      "proportion": 0.9208333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 3,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "dad",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 9,
+      "total": 480,
+      "proportion": 0.01875
+    },
+    {
+      "relationship": "dad",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 468,
+      "total": 480,
+      "proportion": 0.975
+    },
+    {
+      "relationship": "dad",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 193,
+      "total": 480,
+      "proportion": 0.40208333333333335
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 11,
+      "total": 480,
+      "proportion": 0.022916666666666665
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 78,
+      "total": 480,
+      "proportion": 0.1625
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 34,
+      "total": 480,
+      "proportion": 0.07083333333333333
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 66,
+      "total": 480,
+      "proportion": 0.1375
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 88,
+      "total": 480,
+      "proportion": 0.18333333333333332
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 1,
+      "opening_policy": "urgency_label",
+      "n": 10,
+      "total": 480,
+      "proportion": 0.020833333333333332
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 42,
+      "total": 480,
+      "proportion": 0.0875
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 399,
+      "total": 480,
+      "proportion": 0.83125
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 6,
+      "total": 480,
+      "proportion": 0.0125
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 26,
+      "total": 480,
+      "proportion": 0.05416666666666667
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 470,
+      "total": 480,
+      "proportion": 0.9791666666666666
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 3,
+      "opening_policy": "urgency_label",
+      "n": 8,
+      "total": 480,
+      "proportion": 0.016666666666666666
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 474,
+      "total": 480,
+      "proportion": 0.9875
+    },
+    {
+      "relationship": "daddy",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 370,
+      "total": 480,
+      "proportion": 0.7708333333333334
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 7,
+      "total": 480,
+      "proportion": 0.014583333333333334
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 31,
+      "total": 480,
+      "proportion": 0.06458333333333334
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 71,
+      "total": 480,
+      "proportion": 0.14791666666666667
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 148,
+      "total": 480,
+      "proportion": 0.30833333333333335
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 188,
+      "total": 480,
+      "proportion": 0.39166666666666666
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 72,
+      "total": 480,
+      "proportion": 0.15
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 58,
+      "total": 480,
+      "proportion": 0.12083333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 7,
+      "total": 480,
+      "proportion": 0.014583333333333334
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 3,
+      "opening_policy": "conditional_assessment",
+      "n": 22,
+      "total": 480,
+      "proportion": 0.04583333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 16,
+      "total": 480,
+      "proportion": 0.03333333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 432,
+      "total": 480,
+      "proportion": 0.9
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 3,
+      "opening_policy": "interim_action",
+      "n": 10,
+      "total": 480,
+      "proportion": 0.020833333333333332
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 472,
+      "total": 480,
+      "proportion": 0.9833333333333333
+    },
+    {
+      "relationship": "girlfriend",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 5,
+      "total": 480,
+      "proportion": 0.010416666666666666
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 266,
+      "total": 480,
+      "proportion": 0.5541666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 60,
+      "total": 480,
+      "proportion": 0.125
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 33,
+      "total": 480,
+      "proportion": 0.06875
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 22,
+      "total": 480,
+      "proportion": 0.04583333333333333
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 95,
+      "total": 480,
+      "proportion": 0.19791666666666666
+    },
+    {
+      "relationship": "husband",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 73,
+      "total": 480,
+      "proportion": 0.15208333333333332
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 326,
+      "total": 480,
+      "proportion": 0.6791666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 35,
+      "total": 480,
+      "proportion": 0.07291666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 39,
+      "total": 480,
+      "proportion": 0.08125
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "opening_policy": "conditional_assessment",
+      "n": 6,
+      "total": 480,
+      "proportion": 0.0125
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 10,
+      "total": 480,
+      "proportion": 0.020833333333333332
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 461,
+      "total": 480,
+      "proportion": 0.9604166666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "opening_policy": "interim_action",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "husband",
+      "certainty": 3,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "husband",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 11,
+      "total": 480,
+      "proportion": 0.022916666666666665
+    },
+    {
+      "relationship": "husband",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 469,
+      "total": 480,
+      "proportion": 0.9770833333333333
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 191,
+      "total": 480,
+      "proportion": 0.39791666666666664
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 79,
+      "total": 480,
+      "proportion": 0.16458333333333333
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 72,
+      "total": 480,
+      "proportion": 0.15
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 38,
+      "total": 480,
+      "proportion": 0.07916666666666666
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 86,
+      "total": 480,
+      "proportion": 0.17916666666666667
+    },
+    {
+      "relationship": "mom",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 14,
+      "total": 480,
+      "proportion": 0.029166666666666667
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 41,
+      "total": 480,
+      "proportion": 0.08541666666666667
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 391,
+      "total": 480,
+      "proportion": 0.8145833333333333
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 30,
+      "total": 480,
+      "proportion": 0.0625
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 11,
+      "total": 480,
+      "proportion": 0.022916666666666665
+    },
+    {
+      "relationship": "mom",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "mom",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 25,
+      "total": 480,
+      "proportion": 0.052083333333333336
+    },
+    {
+      "relationship": "mom",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 455,
+      "total": 480,
+      "proportion": 0.9479166666666666
+    },
+    {
+      "relationship": "mom",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "mom",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 471,
+      "total": 480,
+      "proportion": 0.98125
+    },
+    {
+      "relationship": "mom",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 6,
+      "total": 480,
+      "proportion": 0.0125
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 91,
+      "total": 480,
+      "proportion": 0.18958333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 172,
+      "total": 480,
+      "proportion": 0.35833333333333334
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 11,
+      "total": 480,
+      "proportion": 0.022916666666666665
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 40,
+      "total": 480,
+      "proportion": 0.08333333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 154,
+      "total": 480,
+      "proportion": 0.32083333333333336
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 1,
+      "opening_policy": "urgency_label",
+      "n": 8,
+      "total": 480,
+      "proportion": 0.016666666666666666
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 15,
+      "total": 480,
+      "proportion": 0.03125
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 376,
+      "total": 480,
+      "proportion": 0.7833333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 58,
+      "total": 480,
+      "proportion": 0.12083333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 27,
+      "total": 480,
+      "proportion": 0.05625
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 458,
+      "total": 480,
+      "proportion": 0.9541666666666667
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 3,
+      "opening_policy": "supportive_relational",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 3,
+      "opening_policy": "urgency_label",
+      "n": 19,
+      "total": 480,
+      "proportion": 0.03958333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 448,
+      "total": 480,
+      "proportion": 0.9333333333333333
+    },
+    {
+      "relationship": "mommy",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 30,
+      "total": 480,
+      "proportion": 0.0625
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "conditional_assessment",
+      "n": 293,
+      "total": 480,
+      "proportion": 0.6104166666666667
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "diagnostic_assertion",
+      "n": 55,
+      "total": 480,
+      "proportion": 0.11458333333333333
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "ems_priority",
+      "n": 26,
+      "total": 480,
+      "proportion": 0.05416666666666667
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "information_question",
+      "n": 38,
+      "total": 480,
+      "proportion": 0.07916666666666666
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "interim_action",
+      "n": 65,
+      "total": 480,
+      "proportion": 0.13541666666666666
+    },
+    {
+      "relationship": "wife",
+      "certainty": 1,
+      "opening_policy": "supportive_relational",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "conditional_assessment",
+      "n": 90,
+      "total": 480,
+      "proportion": 0.1875
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "diagnostic_assertion",
+      "n": 3,
+      "total": 480,
+      "proportion": 0.00625
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "ems_priority",
+      "n": 286,
+      "total": 480,
+      "proportion": 0.5958333333333333
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "information_question",
+      "n": 65,
+      "total": 480,
+      "proportion": 0.13541666666666666
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "interim_action",
+      "n": 33,
+      "total": 480,
+      "proportion": 0.06875
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "supportive_relational",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "wife",
+      "certainty": 2,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    },
+    {
+      "relationship": "wife",
+      "certainty": 3,
+      "opening_policy": "conditional_assessment",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "wife",
+      "certainty": 3,
+      "opening_policy": "diagnostic_assertion",
+      "n": 4,
+      "total": 480,
+      "proportion": 0.008333333333333333
+    },
+    {
+      "relationship": "wife",
+      "certainty": 3,
+      "opening_policy": "ems_priority",
+      "n": 467,
+      "total": 480,
+      "proportion": 0.9729166666666667
+    },
+    {
+      "relationship": "wife",
+      "certainty": 3,
+      "opening_policy": "interim_action",
+      "n": 5,
+      "total": 480,
+      "proportion": 0.010416666666666666
+    },
+    {
+      "relationship": "wife",
+      "certainty": 4,
+      "opening_policy": "diagnostic_assertion",
+      "n": 2,
+      "total": 480,
+      "proportion": 0.004166666666666667
+    },
+    {
+      "relationship": "wife",
+      "certainty": 4,
+      "opening_policy": "ems_priority",
+      "n": 477,
+      "total": 480,
+      "proportion": 0.99375
+    },
+    {
+      "relationship": "wife",
+      "certainty": 4,
+      "opening_policy": "urgency_label",
+      "n": 1,
+      "total": 480,
+      "proportion": 0.0020833333333333333
+    }
+  ],
+  "ordered_certainty_trend": {
+    "relationship_x_ordered_certainty": {
+      "estimable": true,
+      "statistic": 781.6411817836389,
+      "df": 7,
+      "p": 1.697935543807011e-164,
+      "coefficient_count": 7
+    }
+  },
+  "role_sex_decomposition": {
+    "pair_key_x_referent_sex_x_certainty": {
+      "estimable": true,
+      "statistic": 34.80203152671401,
+      "df": 9,
+      "p": 6.456875283987807e-05,
+      "coefficient_count": 9
+    },
+    "referent_sex_x_certainty": {
+      "estimable": true,
+      "statistic": 49.34026972688541,
+      "df": 3,
+      "p": 1.1040435448606637e-10,
+      "coefficient_count": 3
+    }
+  },
+  "stratified_relationship_x_certainty": {
+    "by_model": {
+      "claude-sonnet-5": {
+        "n": 7311,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 1763.7068153965579,
+          "df": 21,
+          "p": 0.0
+        }
+      },
+      "gpt-5.6-terra": {
+        "n": 7680,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 859.2447065157439,
+          "df": 21,
+          "p": 2.4381428697124854e-168
+        }
+      }
+    },
+    "by_system": {
+      "assistant": {
+        "n": 4973,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 472.42109452022646,
+          "df": 21,
+          "p": 8.410414282971912e-87
+        }
+      },
+      "minimal": {
+        "n": 5018,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 658.4568903413028,
+          "df": 21,
+          "p": 7.80669440572127e-126
+        }
+      },
+      "none": {
+        "n": 5000,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 424.17278506842666,
+          "df": 21,
+          "p": 9.107268001926799e-77
+        }
+      }
+    },
+    "by_variant": {
+      "A": {
+        "n": 7421,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 501.3873264497502,
+          "df": 21,
+          "p": 7.5745675532083676e-93
+        }
+      },
+      "B": {
+        "n": 7570,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "statistic": 945.3614297811146,
+          "df": 21,
+          "p": 1.2029023610533171e-186
+        }
+      }
+    }
+  },
+  "model_heterogeneity": {
+    "relationship_x_certainty_x_model": {
+      "estimable": true,
+      "statistic": 1201.0737025684377,
+      "df": 21,
+      "p": 3.4583012942995017e-241,
+      "coefficient_count": 21
+    }
+  },
+  "system_heterogeneity": {
+    "relationship_x_certainty_x_system": {
+      "estimable": true,
+      "statistic": 176.74075219150123,
+      "df": 42,
+      "p": 1.86592025958505e-18,
+      "coefficient_count": 42
+    }
+  }
+}
