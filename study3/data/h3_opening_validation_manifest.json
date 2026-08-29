@@ -1,0 +1,16 @@
+{
+  "status": "sample frozen before human coding",
+  "seed": "study3-h3-opening-validation-v1-20260829",
+  "sampling": "4 per model \u00d7 relationship \u00d7 certainty cell",
+  "n_per_cell": 4,
+  "n_strata": 64,
+  "sample_n": 256,
+  "ems_present_validation_frame_n": 14991,
+  "source_results_sha256": "7ece419bdb1044c9b05a8534661e29fb8f375e233122d1c277ee755310cf98c5",
+  "git_head_at_sampling": "e66df80b83c2becf038285bd149ec5a521fcf9aa",
+  "sample_id_order_sha256": "fded73f43a0003120cba71e4c96c8536909a402760672bce53f37675b1d84cae",
+  "machine_labels_in_blinded_sample": false,
+  "metadata_visible_during_human_coding": false,
+  "source_id_column": "trial_id",
+  "source_text_column": "response_sha256"
+}
