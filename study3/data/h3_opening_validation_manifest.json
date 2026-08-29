@@ -12,5 +12,17 @@
   "machine_labels_in_blinded_sample": false,
   "metadata_visible_during_human_coding": false,
   "source_id_column": "trial_id",
-  "source_text_column": "response_sha256"
+  "source_text_column": "response",
+  "text_field_repair": {
+    "performed_before_human_coding": true,
+    "human_codes_entered_before_repair": 0,
+    "sample_size": 256,
+    "selected_source_ids_changed": false,
+    "coding_order_changed": false,
+    "source_file": "data/full.jsonl",
+    "source_file_sha256": "5abd5206ba4e869b7f09a35402be46fa7e84fe7cac6cd7af8e7c587fec5dd90f",
+    "source_id_column": "trial_id",
+    "response_text_column": "response",
+    "reason": "Initial audit UI mistakenly displayed a SHA-256-like derived field. A second heuristic selected opening_feature_starts. Both attempts were stopped before any human label was entered. Repository inspection established that complete model prose is stored explicitly in data/full.jsonl under response."
+  }
 }
