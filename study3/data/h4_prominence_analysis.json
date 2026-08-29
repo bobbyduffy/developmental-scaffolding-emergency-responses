@@ -1,0 +1,154 @@
+{
+  "status": "post-confirmatory prespecified H4 reporting/sensitivity analysis",
+  "confirmatory_checkpoint": "a321cbee8fd7a4166152892ef38d6ad4ff38b89c",
+  "n_h4": 14991,
+  "overall_rate": 0.6868787939430325,
+  "frozen_H4_rank_diagnostic": {
+    "estimable": true,
+    "nominal_constraints": 21,
+    "covariance_rank": 21,
+    "rank_deficient": false,
+    "design_matrix_rank": 46,
+    "n_parameters": 46,
+    "statistic": 1054.425217926989,
+    "effective_df": 21,
+    "p": 7.02883313825895e-210
+  },
+  "model_heterogeneity": {
+    "estimable": true,
+    "nominal_constraints": 21,
+    "covariance_rank": 21,
+    "rank_deficient": false,
+    "design_matrix_rank": 78,
+    "n_parameters": 78,
+    "statistic": 852.7715677024636,
+    "effective_df": 21,
+    "p": 5.7750815049750616e-167
+  },
+  "system_heterogeneity": {
+    "estimable": true,
+    "nominal_constraints": 42,
+    "covariance_rank": 42,
+    "rank_deficient": false,
+    "design_matrix_rank": 110,
+    "n_parameters": 110,
+    "statistic": 416.9033515421831,
+    "effective_df": 42,
+    "p": 3.2220655064281695e-63
+  },
+  "stratified_relationship_x_certainty": {
+    "by_model": {
+      "claude-sonnet-5": {
+        "n": 7311,
+        "rate": 0.5810422650800164,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 45,
+          "n_parameters": 45,
+          "statistic": 743.5059810133095,
+          "effective_df": 21,
+          "p": 8.394980403756324e-144
+        }
+      },
+      "gpt-5.6-terra": {
+        "n": 7680,
+        "rate": 0.7876302083333333,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 45,
+          "n_parameters": 45,
+          "statistic": 1119.4539266880363,
+          "effective_df": 21,
+          "p": 9.386999440480483e-224
+        }
+      }
+    },
+    "by_system": {
+      "assistant": {
+        "n": 4973,
+        "rate": 0.7412024934647095,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 44,
+          "n_parameters": 44,
+          "statistic": 724.4159229988813,
+          "effective_df": 21,
+          "p": 9.169699298449897e-140
+        }
+      },
+      "minimal": {
+        "n": 5018,
+        "rate": 0.6998804304503786,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 44,
+          "n_parameters": 44,
+          "statistic": 427.41202964600814,
+          "effective_df": 21,
+          "p": 1.9374467514191213e-77
+        }
+      },
+      "none": {
+        "n": 5000,
+        "rate": 0.6198,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 44,
+          "n_parameters": 44,
+          "statistic": 380.77488157623753,
+          "effective_df": 21,
+          "p": 8.711992556044676e-68
+        }
+      }
+    },
+    "by_variant": {
+      "A": {
+        "n": 7421,
+        "rate": 0.7302250370570004,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 35,
+          "n_parameters": 35,
+          "statistic": 583.7106776850018,
+          "effective_df": 21,
+          "p": 4.245345942518288e-110
+        }
+      },
+      "B": {
+        "n": 7570,
+        "rate": 0.6443857331571995,
+        "relationship_x_certainty": {
+          "estimable": true,
+          "nominal_constraints": 21,
+          "covariance_rank": 21,
+          "rank_deficient": false,
+          "design_matrix_rank": 35,
+          "n_parameters": 35,
+          "statistic": 552.6477184976197,
+          "effective_df": 21,
+          "p": 1.4071713688741647e-103
+        }
+      }
+    }
+  },
+  "adjusted_probability_note": "Model-stratified LPM estimates equally average prompt variants and system-prompt design strata.",
+  "interpretive_scope": "Higher-order model/system interactions are secondary sensitivity analyses. Variant-stratified relationship-by-certainty estimates are reporting/sensitivity results, not a new confirmatory family."
+}
