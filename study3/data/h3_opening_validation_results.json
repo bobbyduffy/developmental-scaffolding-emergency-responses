@@ -1,0 +1,61 @@
+{
+  "status": "completed blinded author validation audit",
+  "sample_manifest": {
+    "status": "sample frozen before human coding",
+    "seed": "study3-h3-opening-validation-v1-20260829",
+    "sampling": "4 per model \u00d7 relationship \u00d7 certainty cell",
+    "n_per_cell": 4,
+    "n_strata": 64,
+    "sample_n": 256,
+    "ems_present_validation_frame_n": 14991,
+    "source_results_sha256": "7ece419bdb1044c9b05a8534661e29fb8f375e233122d1c277ee755310cf98c5",
+    "git_head_at_sampling": "e66df80b83c2becf038285bd149ec5a521fcf9aa",
+    "sample_id_order_sha256": "fded73f43a0003120cba71e4c96c8536909a402760672bce53f37675b1d84cae",
+    "machine_labels_in_blinded_sample": false,
+    "metadata_visible_during_human_coding": false,
+    "source_id_column": "trial_id",
+    "source_text_column": "response",
+    "text_field_repair": {
+      "performed_before_human_coding": true,
+      "human_codes_entered_before_repair": 0,
+      "sample_size": 256,
+      "selected_source_ids_changed": false,
+      "coding_order_changed": false,
+      "source_file": "data/full.jsonl",
+      "source_file_sha256": "5abd5206ba4e869b7f09a35402be46fa7e84fe7cac6cd7af8e7c587fec5dd90f",
+      "source_id_column": "trial_id",
+      "response_text_column": "response",
+      "reason": "Initial audit UI mistakenly displayed a SHA-256-like derived field. A second heuristic selected opening_feature_starts. Both attempts were stopped before any human label was entered. Repository inspection established that complete model prose is stored explicitly in data/full.jsonl under response."
+    }
+  },
+  "h3_ems_priority_opening": {
+    "audit_n": 256,
+    "non_uncertain_n": 256,
+    "uncertain_n": 0,
+    "equal_cell_exact_agreement": 0.87890625,
+    "equal_cell_kappa": 0.6939216291268128,
+    "agreement_95pct_wilson": [
+      0.8332442794764335,
+      0.9133648293258357
+    ],
+    "sampling_weighted_exact_agreement": 0.8774931625642052,
+    "sampling_weighted_kappa": 0.6791637362839252,
+    "sampling_weighted_machine_priority_rate": 0.6894136481889134,
+    "sampling_weighted_human_priority_rate": 0.8119204856247082,
+    "sampling_weighted_human_minus_machine_pp": 12.250683743579483
+  },
+  "opening_policy": {
+    "audit_n": 256,
+    "non_uncertain_n": 256,
+    "uncertain_n": 0,
+    "equal_cell_exact_agreement": 0.66796875,
+    "equal_cell_kappa": 0.4633653111050827,
+    "sampling_weighted_exact_agreement": 0.6819925288506438,
+    "sampling_weighted_kappa": 0.47316703033710256
+  },
+  "prespecified_interpretation_guardrails": {
+    "h3_strongly_supported": false,
+    "opening_policy_supported_for_descriptive_use": false
+  },
+  "note": "Validation does not alter frozen Study 3 machine-coded labels."
+}

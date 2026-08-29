@@ -1,0 +1,8 @@
+machine,conditional_assessment,diagnostic_assertion,ems_priority,information_question,interim_action,supportive_relational,urgency_label
+conditional_assessment,23,11,0,0,5,4,14
+diagnostic_assertion,0,1,0,0,0,0,3
+ems_priority,0,1,137,0,0,2,30
+information_question,0,1,0,1,0,1,5
+interim_action,0,1,0,0,4,1,5
+supportive_relational,1,0,0,0,0,3,0
+urgency_label,0,0,0,0,0,0,2
