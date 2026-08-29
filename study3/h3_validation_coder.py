@@ -193,8 +193,12 @@ def detect_text_col(df):
 
 
 def prepare():
-    if not RESULTS.exists():
-        raise RuntimeError(f"Missing {RESULTS}")
+    raise RuntimeError(
+        "DEPRECATED: automatic response-text detection failed during the "
+        "completed Study 3 validation workflow. The frozen sample was repaired "
+        "explicitly from data/full.jsonl via repair_h3_validation_sample.py. "
+        "Do not rerun automatic preparation."
+    )
 
     if not SAMPLE.exists():
         raise RuntimeError(f"Missing frozen sample: {SAMPLE}")
