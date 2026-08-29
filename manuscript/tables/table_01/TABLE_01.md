@@ -1,0 +1,9 @@
+﻿# Table 1. Three-study design and sample overview
+
+| Study | Research role | Relationship framing | Emergency/evidence manipulation | Prompt variants | Repetitions per exact cell | Total N | Primary endpoint |
+| --- | --- | --- | --- | --- | ---: | ---: | --- |
+| **1** | Discovery | 4 female-coded terms: mommy, mom, girlfriend, wife | High only vs high + explicit unresponsiveness (`won't wake up`) | — | 60 | 2,880 | EMS directive presence (`ems_instruction`) |
+| **2** | Prospective replication and decomposition | 8 matched terms: mommy/daddy, mom/dad, girlfriend/boyfriend, wife/husband | High only vs high + explicit unresponsiveness (`she/he won't wake up`) | — | 60 | 5,760 | First EMS-directive word (`first_ems_directive_word`) |
+| **3** | Boundary-condition test | Same 8 matched terms as Study 2 | 4 ordered levels: responsive impairment; unresponsive; + vague respiratory abnormality; + severe respiratory compromise | 2 (A/B) | 40 | 15,360 | First EMS-directive word (`first_ems_directive_word`), conditional on EMS presence |
+
+**Note.** All three studies used the same two model endpoints (Claude Sonnet 5 and GPT-5.6 Terra), the same three system-prompt conditions (none, minimal identity/date, and identity/date plus the frozen helpful/direct/brief assistant instruction), and cold single-turn prompts. Total N denotes canonical study N rather than an analysis-specific eligible sample. Study 1 foregrounding latency was exploratory; its preregistered primary endpoint was binary EMS-directive presence. Study 2 prospectively tested foregrounding using the first clean EMS-directive word and restricted primary inference to explicit-emergency responses containing an EMS directive. Study 3 used the same latency endpoint conditional on EMS presence and replaced the binary emergency manipulation with four ordered evidence levels plus two wording variants. Study 3 Level 1 already described responsive impairment and was not a benign `high only` baseline.
