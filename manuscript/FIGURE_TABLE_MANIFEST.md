@@ -29,7 +29,7 @@ Three-panel conceptual/design schematic.
 ---
 
 ### Figure 2 — Study 2 matched-role latency contrasts
-**Status:** PLANNED
+**Status:** SPEC FROZEN / RENDERED / VERIFIED
 
 Scientific job:
 Show replication of relationship-conditioned EMS latency while demonstrating that
@@ -41,7 +41,7 @@ Four matched contrasts with interval estimates.
 ---
 
 ### Figure 3 — Study 3 primary relationship × certainty latency surfaces
-**Status:** PLANNED
+**Status:** SPEC FROZEN / RENDERED / VERIFIED
 
 Scientific job:
 Display the preregistered primary Study 3 relationship × certainty interaction in
@@ -123,4 +123,5 @@ Likely supplementary material includes:
 5. Freeze and render Figure 4.
 6. Freeze Tables 1-3.
 7. Draft manuscript from the frozen visual/reporting architecture.
+
 
