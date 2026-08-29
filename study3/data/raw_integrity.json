@@ -1,0 +1,45 @@
+{
+  "pre_collection_freeze_sha": "e82fc872ebaf2e52d35f37974d3ef5a7b5b0e92f",
+  "raw_sha256": "5abd5206ba4e869b7f09a35402be46fa7e84fe7cac6cd7af8e7c587fec5dd90f",
+  "manifest_sha256": "1fc3ad5a0e70df88584c9f7ca342d06591b3fa5b7337f08556c541c78e447a76",
+  "raw_jsonl_lines": 15675,
+  "status_counts": {
+    "ok": 15360,
+    "missing": 315
+  },
+  "unique_recorded_trial_ids": 15360,
+  "unique_successful_trial_ids": 15360,
+  "recovered_trial_ids": 315,
+  "canonical_cells": 384,
+  "canonical_cell_min_n": 40,
+  "canonical_cell_max_n": 40,
+  "empty_successes": 0,
+  "truncated_successes": 0,
+  "checks": {
+    "manifest_intended_n_trials": true,
+    "design_n_trials": true,
+    "unique_recorded_ids": true,
+    "unique_successful_ids": true,
+    "no_unknown_ids": true,
+    "no_absent_ids": true,
+    "no_duplicate_ok_ids": true,
+    "no_ids_without_ok": true,
+    "recovery_count_expected": true,
+    "recovery_histories_clean": true,
+    "canonical_metadata_matches_frozen_design": true,
+    "no_empty_successes": true,
+    "no_truncated_successes": true,
+    "canonical_cell_count": true,
+    "canonical_cells_balanced_40_each": true
+  },
+  "all_checks_pass": true,
+  "failure_counts": {
+    "unknown_ids": 0,
+    "absent_ids": 0,
+    "duplicate_ok_ids": 0,
+    "ids_without_ok": 0,
+    "unexpected_histories": 0,
+    "metadata_mismatches": 0,
+    "bad_cell_counts": 0
+  }
+}
