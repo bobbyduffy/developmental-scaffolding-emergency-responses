@@ -48,6 +48,14 @@ After credits were restored, all 315 recovery targets completed successfully. Th
 
 The metadata-only integrity checker confirmed 384 factorial cells with exactly 40 canonical successful responses per cell, zero empty successful responses, zero truncated successful responses, and no trial-ID or frozen-design metadata mismatches. The completed raw collection was checkpointed at commit `37b7094df524e3033383f226ca1ccff58f101845` with raw SHA-256 `5abd5206ba4e869b7f09a35402be46fa7e84fe7cac6cd7af8e7c587fec5dd90f`.
 
+### Raw-file SHA-256 line-ending normalization note
+
+A later archive review found that the committed Git blob for `study3/data/full.jsonl` had SHA-256 `088f7ce8df2448293bead9e7d9f7f2ac74208dac3ab34f82a9bc2571998ab54b`, while the integrity report records `5abd5206ba4e869b7f09a35402be46fa7e84fe7cac6cd7af8e7c587fec5dd90f`.
+
+This discrepancy was resolved on August 29, 2026 as Git line-ending normalization, not a data-content change. The Windows working-tree file contained 32,268,770 bytes and hashed to `5abd5206...`; `git show a321cbee8fd7a4166152892ef38d6ad4ff38b89c:study3/data/full.jsonl` returned 32,253,095 bytes and hashed to `088f7ce8...`. The byte-count difference is exactly 15,675 bytes, equal to the number of JSONL records. Replacing each committed LF (`\n`) with CRLF (`\r\n`) reproduced the working-tree byte count **and** the exact `5abd5206...` hash. Local Git configuration reported `core.autocrlf=true`.
+
+Therefore the two hashes identify the same 15,675 JSON records under CRLF working-tree versus LF-normalized committed representations. The integrity report's hash is the pre-commit Windows working-tree representation; the Git blob hash is the normalized repository representation.
+
 ## Canonicalization of recovered trials before coding
 
 The preregistered coding logic was written for one raw record per trial. Because recovery intentionally retained the 315 earlier failure records and appended the successful responses under the same frozen trial IDs, applying the original loop directly to `full.jsonl` would have produced 15,675 coded rows and incorrectly treated provenance failures as extra observations.
