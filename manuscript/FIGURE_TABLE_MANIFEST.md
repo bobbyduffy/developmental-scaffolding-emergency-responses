@@ -52,8 +52,8 @@ Two model panels with common y-axis and eight relationship traces across L1-L4.
 
 ---
 
-### Figure 4 — Study 3 mechanical-endpoint relationship-spread heatmap
-**Status:** PLANNED
+### Figure 4 — Study 3 mechanical-endpoint relationship-spread bars
+**Status:** SPEC FROZEN / RENDERED / VERIFIED
 
 Scientific job:
 Show where relationship-conditioned variation resides across increasing emergency
@@ -63,10 +63,7 @@ evidence for three mechanically defined endpoints:
 2. EMS within the first 10 words conditional on EMS presence
 3. first EMS-directive word position conditional on EMS presence
 
-Planned format:
-Claude/GPT × L1-L4 heatmap with three endpoint columns.
-Each endpoint uses its own numerical scale.
-Cell values are printed directly.
+Final format: Three aligned horizontal-bar panels with shared categorical rows. Presence and ≤10-word spreads share a percentage-point scale; latency uses a separate word scale. Numerical values are printed directly.
 
 ---
 
@@ -123,5 +120,7 @@ Likely supplementary material includes:
 5. Freeze and render Figure 4.
 6. Freeze Tables 1-3.
 7. Draft manuscript from the frozen visual/reporting architecture.
+
+
 
 
